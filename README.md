@@ -1,14 +1,24 @@
 # arp-npl-nachfuehrung
 
+
+Leeres Schema in der Edit-DB erstellen:
 ```
-java -jar ili2pg..... --dbhost localhost:54321 
+CREATE SCHEMA arp_nutzungsplanung AUTHORIZATION "admin"
+```
+Modell SO_Nutzungsplanung_Nachfuehrung_20201005 in DB anlege:
+```
+java -jar C:/Users/bjsvwlue/Documents/ili2pg-4.3.1/ili2pg-4.3.1.jar --schemaimport --models SO_Nutzungsplanung_Nachfuehrung_20201005 --dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin --dbschema arp_nutzungsplanung --nameByTopic --defaultSrsCode 2056 --strokeArcs --sqlEnableNull --createGeomIdx --createFkIdx --createUnique --createFk --createNumChecks C:/Users/bjsvwlue/Documents/arp-npl-nachfuehrung/SO_Nutzungsplanung_Nachfuehrung_20201005.ili
 ```
 
-
-Schema NF-Modell anlegen:
+altes Schema arp_npl in der Edit-DB erstellen:
 ```
-ILI2PG_PATH=/Users/stefan/apps/ili2pg-4.3.1/ili2pg-4.3.1.jar  
-java -jar ${ILI2PG_PATH} \
-
-java -java /path/to/ili2pg --modeldir "./model;http://models.geo.admin.ch"...
+CREATE SCHEMA arp_npl AUTHORIZATION "admin";
+```
+Modell SO_Nutzungsplanung_20171118 in DB anlege:
+```
+java -jar C:/Users/bjsvwlue/Documents/ili2pg-4.3.1/ili2pg-4.3.1.jar --schemaimport --models SO_Nutzungsplanung_20171118 --dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin --dbschema arp_npl --nameByTopic --defaultSrsCode 2056 --strokeArcs --sqlEnableNull --createGeomIdx --createFkIdx --createUnique --createFk --createNumChecks
+```
+Import Daten in Schema arp_npl
+```
+java -jar C:/Users/bjsvwlue/Documents/ili2pg-4.3.1/ili2pg-4.3.1.jar --import --models SO_Nutzungsplanung_20171118 --dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin --dbschema arp_npl --disableValidation C:/Users/bjsvwlue/Documents/arp-npl-nachfuehrung/Testdaten/2401.xtf
 ```
