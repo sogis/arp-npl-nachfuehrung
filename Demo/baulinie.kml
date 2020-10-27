@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="baulinie" id="baulinie">
+	<SimpleField name="t_id" type="float"></SimpleField>
+	<SimpleField name="t_basket" type="float"></SimpleField>
+	<SimpleField name="t_datasetn" type="string"></SimpleField>
+	<SimpleField name="t_ili_tid" type="string"></SimpleField>
+	<SimpleField name="geschaefts" type="string"></SimpleField>
+	<SimpleField name="rechtsstat" type="string"></SimpleField>
+	<SimpleField name="publiziert" type="string"></SimpleField>
+	<SimpleField name="bemerkunge" type="string"></SimpleField>
+	<SimpleField name="erfasser" type="string"></SimpleField>
+	<SimpleField name="datum" type="string"></SimpleField>
+	<SimpleField name="publizie_1" type="string"></SimpleField>
+	<SimpleField name="typ_erschl" type="float"></SimpleField>
+	<SimpleField name="erschlssng" type="float"></SimpleField>
+	<SimpleField name="erschlss_1" type="string"></SimpleField>
+	<SimpleField name="erschlss_2" type="string"></SimpleField>
+	<SimpleField name="erschlss_3" type="string"></SimpleField>
+	<SimpleField name="erschlss_4" type="string"></SimpleField>
+	<SimpleField name="erschlss_5" type="string"></SimpleField>
+	<SimpleField name="erschlss_6" type="string"></SimpleField>
+	<SimpleField name="erschlss_7" type="string"></SimpleField>
+	<SimpleField name="erschlss_8" type="string"></SimpleField>
+	<SimpleField name="erschlss_9" type="string"></SimpleField>
+</Schema>
+<Folder><name>baulinie</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#baulinie">
+		<SimpleData name="t_id">213</SimpleData>
+		<SimpleData name="t_basket">425</SimpleData>
+		<SimpleData name="t_datasetn">2586</SimpleData>
+		<SimpleData name="t_ili_tid">8479c162-637c-432a-a7a4-657c8715bd32</SimpleData>
+	</SchemaData></ExtendedData>
+      <MultiGeometry><LineString><coordinates>7.86441764710045,47.3427583539661 7.86433250463388,47.342746163739 7.86395456667256,47.3426718863236 7.86394756645622,47.3426884978939 7.86342851333002,47.3425859714763 7.86342724051646,47.3425889893032 7.86309695173841,47.3425243359367 7.86299670828554,47.3425037198407 7.86237868287259,47.3423818270863 7.86234933965353,47.3423760432569 7.8623503009397,47.3423737821198 7.86227343060142,47.3423586113297 7.86227127390668,47.3423636471457 7.86228271170773,47.342365907817 7.86227386447266,47.342386618541 7.86223110969563,47.3423783114078 7.86224216557418,47.3423524387586 7.86222131781592,47.3423483237227 7.8622201876425,47.3423509812345 7.86218698706257,47.3423443570221 7.86218254701551,47.3423434648473 7.86217996242435,47.342342934648</coordinates></LineString></MultiGeometry>
+  </Placemark>
+</Folder>
+</Document></kml>

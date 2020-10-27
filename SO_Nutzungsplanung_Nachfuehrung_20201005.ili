@@ -12,6 +12,9 @@ INTERLIS 2.3;
  *             |     | - neues Attribut "publiziertBis"
  * ==============================================================================
  */
+!!@ File=SO_Nutzungsplanung_20170915.ili
+!!@ Title=Nutzungsplanung
+!!@ shortDescription="Nutzungsplanungsmodell des Kantons Solothurn. Umfasst;die im MGDM des Bundes definierten Informationen (GeoIV_ID: 73, 145, 157, 159);sowie Erweiterungen des Kt. Solothurn"
 !!@ Issuer=http://arp.so.ch
 !!@ technicalContact=mailto:agi@bd.so.ch
 !!@ furtherInformation=https://sogis.github.io/nplso-arbeitshilfe/index.html
@@ -114,13 +117,6 @@ VERSION "2020-10-05"  =
       Bemerkungen : SO_Nutzungsplanung_Nachfuehrung_20201005.Bemerkungen_Typ;
       Rechtsvorschrift : BOOLEAN;
     END Dokument;
-
-    /** Eine Hierarchie der Dokumente kann erfasst werden. Als primäres Dokument (Ursprung) gilt immer die Rechtsvorschrift (Baureglement, Zonenreglement, Sonderbauvorschrift, Gestaltungsplan etc.), dort wo die eigentumsbeschränkten Informationen festgehalten sind. Die RRBs (Hinweis) werden diesen Rechtsvorschriften zugewiesen. Ist keine Rechtsvorschrift vorhanden, so wird der Typ_Grundnutzung direkt mit dem RRB verknüpft
-     */
-    ASSOCIATION HinweisWeitereDokumente =
-      Ursprung -- {0..*} Dokument;
-      Hinweis -- {0..*} Dokument;
-    END HinweisWeitereDokumente;
 
   END Rechtsvorschriften;
 
@@ -767,88 +763,5 @@ VERSION "2020-10-05"  =
     END Erschliessung_Punktobjekt_Punkt_Pos;
 
   END Erschliessungsplanung;
-
-  TOPIC Verfahrenstand =
-    OID AS INTERLIS.UUIDOID;
-
-    DOMAIN
-
-      Planungsart = (
-        Nutzungsplanung,
-        Erschliessungsplanung,
-        Waldfeststellung
-      );
-
-      Verfahrensstufe = (
-        Vorpruefung,
-        Planauflage,
-        zur_Genehmigung_beantragt,
-        genehmigt_Beschwerde_haengig,
-        rechtskraeftig,
-        von_Genehmigung_ausgenommen
-      );
-
-    CLASS VS_Perimeter_Verfahrensstand =
-      /** Geltungsbereich für die Mutation
-       */
-      Geometrie : MANDATORY SO_Nutzungsplanung_Nachfuehrung_20201005.Einzelflaeche;
-      Planungsart : MANDATORY Planungsart;
-      Verfahrensstufe : MANDATORY Verfahrensstufe;
-      /** Leer lassen
-       */
-      Name_Nummer : TEXT*20;
-      /** Erläuternder Text oder Bemerkungen zum Verfahrenstand.
-       */
-      Bemerkungen : SO_Nutzungsplanung_Nachfuehrung_20201005.Bemerkungen_Typ;
-      /** Name des der Firma
-       */
-      Erfasser : TEXT*80;
-      /** Datum Verfahrensbeginn
-       */
-      Datum : MANDATORY INTERLIS.XMLDate;
-    END VS_Perimeter_Verfahrensstand;
-
-    CLASS VS_Perimeter_Pos
-    EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Pos =
-    END VS_Perimeter_Pos;
-
-    ASSOCIATION VS_Perimeter_Pos_Verfahrensstand =
-      VS_Perimeter_Verfahrensstand -<> {1} VS_Perimeter_Verfahrensstand;
-      VS_Perimeter_Pos -- {0..*} VS_Perimeter_Pos;
-    END VS_Perimeter_Pos_Verfahrensstand;
-
-  END Verfahrenstand;
-
-  TOPIC TransferMetadaten =
-    OID AS INTERLIS.UUIDOID;
-    DEPENDS ON SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung;
-
-    CLASS Amt =
-      /** Firmenname des Erfassers
-       */
-      Name : MANDATORY TEXT*80;
-      /** Verweis auf die Webseite
-       */
-      AmtImWeb : URI;
-    END Amt;
-
-    CLASS Datenbestand =
-      /** Datum des Datenstandes, z.B. Gemeinderatsbeschluss oder bereinigte Daten nach RRB
-       */
-      Stand : MANDATORY INTERLIS.XMLDate;
-      /** Datum der Datenlieferung
-       */
-      Lieferdatum : INTERLIS.XMLDate;
-      /** Erläuternder Text oder Bemerkungen zum Datenbestand.
-       */
-      Bemerkungen : SO_Nutzungsplanung_Nachfuehrung_20201005.Bemerkungen_Typ;
-    END Datenbestand;
-
-    ASSOCIATION zustStelle_Daten =
-      Amt -<> {1} Amt;
-      Datenbestand -- {0..*} Datenbestand;
-    END zustStelle_Daten;
-
-  END TransferMetadaten;
 
 END SO_Nutzungsplanung_Nachfuehrung_20201005.
