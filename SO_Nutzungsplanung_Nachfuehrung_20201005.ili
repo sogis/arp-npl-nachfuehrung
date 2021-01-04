@@ -10,6 +10,8 @@ INTERLIS 2.3;
  *             |     | - neue Werte bei Rechtstatus
  *             |     | - Name_Nummer heisst neu "Geschaefts_Nummer"
  *             |     | - neues Attribut "publiziertBis"
+ *             |     | - neues Topic Lärmempfindlichkeitsstufen
+ *             |     | - Typ_Kanton aktualisiert (nur die vorhanden, die in diesem Modell nachgeführt werden)
  * ==============================================================================
  */
 !!@ File=SO_Nutzungsplanung_20170915.ili
@@ -22,7 +24,7 @@ INTERLIS 2.3;
 MODEL SO_Nutzungsplanung_Nachfuehrung_20201005 (de)
 AT "http://www.geo.so.ch"
 VERSION "2020-10-05"  =
-  IMPORTS GeometryCHLV95_V1,CHAdminCodes_V1;
+  IMPORTS CHAdminCodes_V1,GeometryCHLV95_V1;
 
   DOMAIN
 
@@ -41,25 +43,13 @@ VERSION "2020-10-05"  =
       AenderungMitVorwirkung,
       /** Das Objekt ist in einem Verfahren zur Änderung, entfaltet aber noch keine Vorwirkung (Zeitpunkt vor der öffentlichen Auflage).
        */
-      AenderungOhneVorwirkung,
-      /** Objekt noch in Karft, wird aber durch eine Änderung abgelöst
-       */
-      Abloesung
+      AenderungOhneVorwirkung
     );
 
     Verbindlichkeit = (
-      /** Eigentümerverbindlich, im Verfahren der Nutzungsplanung festgelegt.
+      /** Im Nachführungsmodell verbleiben nur die Objekte mit Verbindlichkeit=Nutzungsplanfestlegung.
        */
-      Nutzungsplanfestlegung,
-      /** Eigentümerverbindlich, in einem anderen Verfahren festgelegt.
-       */
-      orientierend,
-      /** Nicht eigentümerverbindlich, Informationsinhalte.
-       */
-      hinweisend,
-      /** Nicht eigentümerverbindlich, sie umfassen Qualitäten, Standards und dergleichen, die zu berücksichtigen sind.
-       */
-      wegleitend
+      Nutzungsplanfestlegung
     );
 
     /** In Gon
@@ -184,93 +174,6 @@ VERSION "2020-10-05"  =
         N499_weitere_Bauzonen_nach_Art18_RPG_ausserhalb_Bauzonen
       );
 
-      NP_Typ_Kanton_Ueberlagernd_Flaeche = (
-        N510_ueberlagernde_Ortsbildschutzzone,
-        N520_BLN_Gebiet,
-        N521_Juraschutzzone,
-        N522_Naturreservat_inkl_Geotope,
-        N523_Landschaftsschutzzone,
-        N524_Siedlungstrennguertel_von_kommunaler_Bedeutung,
-        N525_Siedlungstrennguertel_von_kantonaler_Bedeutung,
-        N526_kantonale_Landwirtschafts_und_Schutzzone_Witi,
-        N527_kantonale_Uferschutzzone,
-        N528_kommunale_Uferschutzzone_ausserhalb_Bauzonen,
-        N529_weitere_Schutzzonen_fuer_Lebensraeume_und_Landschaften,
-        N530_Naturgefahren_erhebliche_Gefaehrdung,
-        N531_Naturgefahren_mittlere_Gefaehrdung,
-        N532_Naturgefahren_geringe_Gefaehrdung,
-        N533_Naturgefahren_Restgefaehrdung,
-        N590_Hofstattzone_Freihaltezone,
-        N591_Bauliche_Einschraenkungen,
-        N592_Hecken_Feldgehoelz_Ufergehoelz,
-        N593_Grundwasserschutzzone_S1,
-        N594_Grundwasserschutzzone_S2,
-        N595_Grundwasserschutzzone_S3,
-        N596_Grundwasserschutzareal,
-        N599_weitere_ueberlagernde_Nutzungszonen,
-        N610_Perimeter_kantonaler_Nutzungsplan,
-        N611_Perimeter_kommunaler_Gestaltungsplan,
-        N620_Perimeter_Gestaltungsplanpflicht,
-        N680_Empfindlichkeitsstufe_I,
-        N681_Empfindlichkeitsstufe_II,
-        N682_Empfindlichkeitsstufe_II_aufgestuft,
-        N683_Empfindlichkeitsstufe_III,
-        N684_Empfindlichkeitsstufe_III_aufgestuft,
-        N685_Empfindlichkeitsstufe_IV,
-        N686_keine_Empfindlichkeitsstufe,
-        N690_kantonales_Vorranggebiet_Natur_und_Landschaft,
-        N691_kommunales_Vorranggebiet_Natur_und_Landschaft,
-        N692_Planungszone,
-        N699_weitere_flaechenbezogene_Festlegungen_NP,
-        N812_geologisches_Objekt,
-        N813_Naturobjekt,
-        N820_kantonal_geschuetztes_Kulturobjekt,
-        N821_kommunal_geschuetztes_Kulturobjekt,
-        N822_schuetzenswertes_Kulturobjekt,
-        N823_erhaltenswertes_Kulturobjekt
-      );
-
-      NP_Typ_Kanton_Ueberlagernd_Linie = (
-        N790_Wanderweg,
-        N791_historischer_Verkehrsweg,
-        N792_Waldgrenze,
-        N793_negative_Waldfeststellung,
-        N799_weitere_linienbezogene_Festlegungen_NP
-      );
-
-      NP_Typ_Kanton_Ueberlagernd_Punkt = (
-        N810_geschuetzter_Einzelbaum,
-        N811_erhaltenswerter_Einzelbaum,
-        N812_geologisches_Objekt,
-        N813_Naturobjekt,
-        N820_kantonal_geschuetztes_Kulturobjekt,
-        N821_kommunal_geschuetztes_Kulturobjekt,
-        N822_schuetzenswertes_Kulturobjekt,
-        N823_erhaltenswertes_Kulturobjekt,
-        N899_weitere_punktbezogene_Festlegungen_NP
-      );
-
-    /** Orientierung der Beschriftung in Gon. 0 gon = Horizontal
-     */
-    CLASS Pos (ABSTRACT) =
-      /** Position für die Beschriftung
-       */
-      Pos : MANDATORY GeometryCHLV95_V1.Coord2;
-      /** Orientierung der Beschriftung in Gon. 0 gon = Horizontal
-       */
-      Ori : SO_Nutzungsplanung_Nachfuehrung_20201005.Rotation;
-      /** Mit dem horizontalen Alignment wird festgelegt, ob die Position auf dem linken oder rechten Rand des Textes oder in der
-       * Textmitte liegt.
-       */
-      HAli : HALIGNMENT;
-      /** Das vertikale Alignment legt die Position in Richtung der Texthöhe fest.
-       */
-      VAli : VALIGNMENT;
-      /** Grösse der Beschriftung
-       */
-      Groesse : MANDATORY SO_Nutzungsplanung_Nachfuehrung_20201005.Schriftgroesse;
-    END Pos;
-
     CLASS Typ (ABSTRACT) =
       /** Name der Grundnutzung, überlagernden Objekts oder Erschliessung. Wird von der Gemeinde definiert.
        */
@@ -283,11 +186,41 @@ VERSION "2020-10-05"  =
        */
       Bemerkungen : SO_Nutzungsplanung_Nachfuehrung_20201005.Bemerkungen_Typ;
       Nachfuehrungseinheit : (
-        Bund,
         Kanton,
         Gemeinde
       );
     END Typ;
+
+    DOMAIN
+
+      NP_Typ_Kanton_Ueberlagernd_Flaeche = (
+        N510_ueberlagernde_Ortsbildschutzzone,
+        N523_Landschaftsschutzzone,
+        N526_kantonale_Landwirtschafts_und_Schutzzone_Witi,
+        N528_kommunale_Uferschutzzone_ausserhalb_Bauzonen,
+        N529_weitere_Schutzzonen_fuer_Lebensraeume_und_Landschaften,
+        N590_Hofstattzone_Freihaltezone,
+        N591_Bauliche_Einschraenkungen,
+        N592_Hecken_Feldgehoelz_Ufergehoelz,
+        N599_weitere_ueberlagernde_Nutzungszonen,
+        N610_Perimeter_kantonaler_Nutzungsplan,
+        N611_Perimeter_kommunaler_Gestaltungsplan,
+        N620_Perimeter_Gestaltungsplanpflicht,
+        N680_Empfindlichkeitsstufe_I,
+        N681_Empfindlichkeitsstufe_II,
+        N682_Empfindlichkeitsstufe_II_aufgestuft,
+        N683_Empfindlichkeitsstufe_III,
+        N684_Empfindlichkeitsstufe_III_aufgestuft,
+        N685_Empfindlichkeitsstufe_IV,
+        N686_keine_Empfindlichkeitsstufe,
+        N691_kommunales_Vorranggebiet_Natur_und_Landschaft,
+        N692_Planungszone,
+        N699_weitere_flaechenbezogene_Festlegungen_NP,
+        N813_Naturobjekt,
+        N821_kommunal_geschuetztes_Kulturobjekt,
+        N822_schuetzenswertes_Kulturobjekt,
+        N823_erhaltenswertes_Kulturobjekt
+      );
 
     CLASS Typ_Grundnutzung
     EXTENDS Typ =
@@ -317,6 +250,12 @@ VERSION "2020-10-05"  =
       Geschosszahl : 0 .. 50;
     END Typ_Grundnutzung;
 
+    DOMAIN
+
+      NP_Typ_Kanton_Ueberlagernd_Linie = (
+        N799_weitere_linienbezogene_Festlegungen_NP
+      );
+
     CLASS Typ_Ueberlagernd_Flaeche
     EXTENDS Typ =
       Typ_Kt : MANDATORY NP_Typ_Kanton_Ueberlagernd_Flaeche;
@@ -325,22 +264,6 @@ VERSION "2020-10-05"  =
       Code_kommunal : MANDATORY TEXT*12;
     END Typ_Ueberlagernd_Flaeche;
 
-    CLASS Typ_Ueberlagernd_Linie
-    EXTENDS Typ =
-      Typ_Kt : MANDATORY NP_Typ_Kanton_Ueberlagernd_Linie;
-      /** 4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Im Objektkatalog ist definiert, welche Werte des kommunalen Codes erlaubt sind.
-       */
-      Code_kommunal : MANDATORY TEXT*12;
-    END Typ_Ueberlagernd_Linie;
-
-    CLASS Typ_Ueberlagernd_Punkt
-    EXTENDS Typ =
-      Typ_Kt : MANDATORY NP_Typ_Kanton_Ueberlagernd_Punkt;
-      /** 4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Im Objektkatalog ist definiert, welche Werte des kommunalen Codes erlaubt sind.
-       */
-      Code_kommunal : MANDATORY TEXT*12;
-    END Typ_Ueberlagernd_Punkt;
-
     /** Siehe in der Arbeitshilfe
      */
     ASSOCIATION Typ_Grundnutzung_Dokument =
@@ -348,26 +271,17 @@ VERSION "2020-10-05"  =
       Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
     END Typ_Grundnutzung_Dokument;
 
-    /** Siehe in der Arbeitshilfe
-     */
-    ASSOCIATION Typ_Ueberlagernd_Flaeche_Dokument =
-      Typ_Ueberlagernd_Flaeche -- {0..*} Typ_Ueberlagernd_Flaeche;
-      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
-    END Typ_Ueberlagernd_Flaeche_Dokument;
+    DOMAIN
 
-    /** Siehe in der Arbeitshilfe
-     */
-    ASSOCIATION Typ_Ueberlagernd_Linie_Dokument =
-      Typ_Ueberlagernd_Linie -- {0..*} Typ_Ueberlagernd_Linie;
-      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
-    END Typ_Ueberlagernd_Linie_Dokument;
-
-    /** Siehe in der Arbeitshilfe
-     */
-    ASSOCIATION Typ_Ueberlagernd_Punkt_Dokument =
-      Typ_Ueberlagernd_Punkt -- {0..*} Typ_Ueberlagernd_Punkt;
-      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
-    END Typ_Ueberlagernd_Punkt_Dokument;
+      NP_Typ_Kanton_Ueberlagernd_Punkt = (
+        N810_geschuetzter_Einzelbaum,
+        N811_erhaltenswerter_Einzelbaum,
+        N813_Naturobjekt,
+        N821_kommunal_geschuetztes_Kulturobjekt,
+        N822_schuetzenswertes_Kulturobjekt,
+        N823_erhaltenswertes_Kulturobjekt,
+        N899_weitere_punktbezogene_Festlegungen_NP
+      );
 
     CLASS Grundnutzung =
       /** Geometrie als Gebietseinteilung. Überlappungen bei Radien mit einer
@@ -395,6 +309,29 @@ VERSION "2020-10-05"  =
       publiziertBis : TEXT*20;
     END Grundnutzung;
 
+    CLASS Typ_Ueberlagernd_Linie
+    EXTENDS Typ =
+      Typ_Kt : MANDATORY NP_Typ_Kanton_Ueberlagernd_Linie;
+      /** 4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Im Objektkatalog ist definiert, welche Werte des kommunalen Codes erlaubt sind.
+       */
+      Code_kommunal : MANDATORY TEXT*12;
+    END Typ_Ueberlagernd_Linie;
+
+    /** Siehe in der Arbeitshilfe
+     */
+    ASSOCIATION Typ_Ueberlagernd_Flaeche_Dokument =
+      Typ_Ueberlagernd_Flaeche -- {0..*} Typ_Ueberlagernd_Flaeche;
+      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
+    END Typ_Ueberlagernd_Flaeche_Dokument;
+
+    CLASS Typ_Ueberlagernd_Punkt
+    EXTENDS Typ =
+      Typ_Kt : MANDATORY NP_Typ_Kanton_Ueberlagernd_Punkt;
+      /** 4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Im Objektkatalog ist definiert, welche Werte des kommunalen Codes erlaubt sind.
+       */
+      Code_kommunal : MANDATORY TEXT*12;
+    END Typ_Ueberlagernd_Punkt;
+
     CLASS Ueberlagernd_Flaeche =
       /** Fläche, welche die Grundnutzung überlagert.
        */
@@ -419,6 +356,20 @@ VERSION "2020-10-05"  =
        */
       publiziertBis : INTERLIS.XMLDate;
     END Ueberlagernd_Flaeche;
+
+    /** Ein Typ_Grundnutzung kann mehrere Grundnutzungsgeometrien haben
+     */
+    ASSOCIATION Typ_Grundnutzung_Grundnutzung =
+      Typ_Grundnutzung -<> {1} Typ_Grundnutzung;
+      Grundnutzung -- {0..*} Grundnutzung;
+    END Typ_Grundnutzung_Grundnutzung;
+
+    /** Siehe in der Arbeitshilfe
+     */
+    ASSOCIATION Typ_Ueberlagernd_Linie_Dokument =
+      Typ_Ueberlagernd_Linie -- {0..*} Typ_Ueberlagernd_Linie;
+      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
+    END Typ_Ueberlagernd_Linie_Dokument;
 
     CLASS Ueberlagernd_Linie =
       /** Linie, welche die Grundnutzung überlagert.
@@ -445,6 +396,20 @@ VERSION "2020-10-05"  =
       publiziertBis : TEXT*20;
     END Ueberlagernd_Linie;
 
+    /** Ein Typ_Ueberlagernd_Flaeche kann mehrere überlagernde Geometrien haben.
+     */
+    ASSOCIATION Typ_Ueberlagernd_Flaeche_Flaeche =
+      Typ_Ueberlagernd_Flaeche -<> {1} Typ_Ueberlagernd_Flaeche;
+      Ueberlagernd_Flaeche -- {0..*} Ueberlagernd_Flaeche;
+    END Typ_Ueberlagernd_Flaeche_Flaeche;
+
+    /** Siehe in der Arbeitshilfe
+     */
+    ASSOCIATION Typ_Ueberlagernd_Punkt_Dokument =
+      Typ_Ueberlagernd_Punkt -- {0..*} Typ_Ueberlagernd_Punkt;
+      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
+    END Typ_Ueberlagernd_Punkt_Dokument;
+
     CLASS Ueberlagernd_Punkt =
       /** Punkt, welche die Grundnutzung überlagert.
        */
@@ -470,20 +435,6 @@ VERSION "2020-10-05"  =
       publiziertBis : TEXT*20;
     END Ueberlagernd_Punkt;
 
-    /** Ein Typ_Grundnutzung kann mehrere Grundnutzungsgeometrien haben
-     */
-    ASSOCIATION Typ_Grundnutzung_Grundnutzung =
-      Typ_Grundnutzung -<> {1} Typ_Grundnutzung;
-      Grundnutzung -- {0..*} Grundnutzung;
-    END Typ_Grundnutzung_Grundnutzung;
-
-    /** Ein Typ_Ueberlagernd_Flaeche kann mehrere überlagernde Geometrien haben.
-     */
-    ASSOCIATION Typ_Ueberlagernd_Flaeche_Flaeche =
-      Typ_Ueberlagernd_Flaeche -<> {1} Typ_Ueberlagernd_Flaeche;
-      Ueberlagernd_Flaeche -- {0..*} Ueberlagernd_Flaeche;
-    END Typ_Ueberlagernd_Flaeche_Flaeche;
-
     /** Ein Typ_Ueberlagernd_Linie kann mehrere überlagernde Geometrien haben.
      */
     ASSOCIATION Typ_Ueberlagernd_Linie_Linie =
@@ -497,50 +448,6 @@ VERSION "2020-10-05"  =
       Typ_Ueberlagernd_Punkt -<> {1} Typ_Ueberlagernd_Punkt;
       Ueberlagernd_Punkt -- {0..*} Ueberlagernd_Punkt;
     END Typ_Ueberlagernd_Punkt_Punkt;
-
-    CLASS Grundnutzung_Pos
-    EXTENDS Pos =
-    END Grundnutzung_Pos;
-
-    CLASS Ueberlagernd_Flaeche_Pos
-    EXTENDS Pos =
-    END Ueberlagernd_Flaeche_Pos;
-
-    CLASS Ueberlagernd_Linie_Pos
-    EXTENDS Pos =
-    END Ueberlagernd_Linie_Pos;
-
-    CLASS Ueberlagernd_Punkt_Pos
-    EXTENDS Pos =
-    END Ueberlagernd_Punkt_Pos;
-
-    /** Beschriftet wir die Abkürzung welche in der Klasse Typ_Grundnutzung erfasst wird.
-     */
-    ASSOCIATION Grundnutzung_Grundnutzung_Pos =
-      Grundnutzung -<> {1} Grundnutzung;
-      Grundnutzung_Pos -- {0..*} Grundnutzung_Pos;
-    END Grundnutzung_Grundnutzung_Pos;
-
-    /** Beschriftet wir die Abkürzung welche in der Klasse Typ_Ueberlagernd_Flaeche erfasst wird.
-     */
-    ASSOCIATION Ueberlagernd_Flaeche_Flaeche_Pos =
-      Ueberlagernd_Flaeche -<> {1} Ueberlagernd_Flaeche;
-      Ueberlagernd_Flaeche_Pos -- {0..*} Ueberlagernd_Flaeche_Pos;
-    END Ueberlagernd_Flaeche_Flaeche_Pos;
-
-    /** Beschriftet wir die Abkürzung welche in der Klasse Typ_Ueberlagernd_Linie erfasst wird.
-     */
-    ASSOCIATION Ueberlagernd_Linie_Linie_Pos =
-      Ueberlagernd_Linie -<> {1} Ueberlagernd_Linie;
-      Ueberlagernd_Linie_Pos -- {0..*} Ueberlagernd_Linie_Pos;
-    END Ueberlagernd_Linie_Linie_Pos;
-
-    /** Beschriftet wir die Abkürzung welche in der Klasse Typ_Ueberlagernd_Punkt erfasst wird.
-     */
-    ASSOCIATION Ueberlagernd_Punkt_Punkt_Pos =
-      Ueberlagernd_Punkt -<> {1} Ueberlagernd_Punkt;
-      Ueberlagernd_Punkt_Pos -- {0..*} Ueberlagernd_Punkt_Pos;
-    END Ueberlagernd_Punkt_Punkt_Pos;
 
   END Nutzungsplanung;
 
@@ -570,7 +477,6 @@ VERSION "2020-10-05"  =
       );
 
       EP_Typ_Kanton_Erschliessung_Linienobjekt = (
-        E710_nationale_Baulinie,
         E711_Baulinie_Strasse_kantonal,
         E712_Vorbaulinie_kantonal,
         E713_Gestaltungsbaulinie_kantonal,
@@ -594,6 +500,14 @@ VERSION "2020-10-05"  =
         E889_weitere_punktbezogene_Objekte_EP
       );
 
+    CLASS Typ_Erschliessung_Linienobjekt
+    EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Typ =
+      Typ_Kt : MANDATORY EP_Typ_Kanton_Erschliessung_Linienobjekt;
+      /** 4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Im Objektkatalog ist definiert, welche Werte des kommunalen Codes erlaubt sind.
+       */
+      Code_kommunal : MANDATORY TEXT*12;
+    END Typ_Erschliessung_Linienobjekt;
+
     CLASS Typ_Erschliessung_Flaechenobjekt
     EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Typ =
       Typ_Kt : MANDATORY EP_Typ_Kanton_Erschliessung_Flaechenobjekt;
@@ -602,61 +516,13 @@ VERSION "2020-10-05"  =
       Code_kommunal : MANDATORY TEXT*12;
     END Typ_Erschliessung_Flaechenobjekt;
 
-    /** Siehe in der Arbeitshilfe
-     */
-    ASSOCIATION Typ_Erschliessung_Flaechenobjekt_Dokument =
-      Typ_Erschliessung_Flaechenobjekt -- {0..*} Typ_Erschliessung_Flaechenobjekt;
-      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
-    END Typ_Erschliessung_Flaechenobjekt_Dokument;
-
-    CLASS Erschliessung_Flaechenobjekt =
-      Geometrie : MANDATORY SO_Nutzungsplanung_Nachfuehrung_20201005.Einzelflaeche;
-      /** SOBAU-NP Nummer bei laufenden Änderungen
-       */
-      Geschaefts_Nummer : TEXT*20;
-      Rechtsstatus : MANDATORY SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsstatus;
-      /** Datum Publikation im Amtsblatt
-       */
-      publiziertAb : MANDATORY INTERLIS.XMLDate;
-      /** Bemerkung zu den einzelnen Erschliessungsobjekten.
-       */
-      Bemerkungen : SO_Nutzungsplanung_Nachfuehrung_20201005.Bemerkungen_Typ;
-      /** Name der Firma die die Daten erfasst hat.
-       */
-      Erfasser : TEXT*80;
-      /** Datum der Erfassung
-       */
-      Datum : MANDATORY INTERLIS.XMLDate;
-      /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
-       */
-      publiziertBis : TEXT*20;
-    END Erschliessung_Flaechenobjekt;
-
-    /** Typ_Erschliessung_Flaecheobjekt kann mehrere Erschliessung-Geometrien haben.
-     */
-    ASSOCIATION Typ_Erschliessung_Flaechenobjekt_Flaeche =
-      Typ_Erschliessung_Flaechenobjekt -<> {1} Typ_Erschliessung_Flaechenobjekt;
-      Erschliessung_Flaechenobjekt -- {0..*} Erschliessung_Flaechenobjekt;
-    END Typ_Erschliessung_Flaechenobjekt_Flaeche;
-
-    CLASS Erschliessung_Flaechenobjekt_Pos
-    EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Pos =
-    END Erschliessung_Flaechenobjekt_Pos;
-
-    /** Beschriftet wir die Abkürzung, welche in der Klasse Typ_Erschliessung_Flaecheobjekt erfasst wird.
-     */
-    ASSOCIATION Erschliessung_Flaechenobjekt_Flaeche_Pos =
-      Erschliessung_Flaechenobjekt -<> {1} Erschliessung_Flaechenobjekt;
-      Erschliessung_Flaechenobjekt_Pos -- {0..*} Erschliessung_Flaechenobjekt_Pos;
-    END Erschliessung_Flaechenobjekt_Flaeche_Pos;
-
-    CLASS Typ_Erschliessung_Linienobjekt
+    CLASS Typ_Erschliessung_Punktobjekt
     EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Typ =
-      Typ_Kt : MANDATORY EP_Typ_Kanton_Erschliessung_Linienobjekt;
+      Typ_Kt : MANDATORY EP_Typ_Kanton_Erschliessung_Punktobjekt;
       /** 4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Im Objektkatalog ist definiert, welche Werte des kommunalen Codes erlaubt sind.
        */
       Code_kommunal : MANDATORY TEXT*12;
-    END Typ_Erschliessung_Linienobjekt;
+    END Typ_Erschliessung_Punktobjekt;
 
     /** Siehe in der Arbeitshilfe
      */
@@ -688,31 +554,12 @@ VERSION "2020-10-05"  =
       publiziertBis : TEXT*20;
     END Erschliessung_Linienobjekt;
 
-    /** Typ_Erschliessung_Linienobjekt kann mehrere Erschliessung-Geometrien haben
+    /** Siehe in der Arbeitshilfe
      */
-    ASSOCIATION Typ_Erschliessung_Linienobjekt_Linie =
-      Typ_Erschliessung_Linienobjekt -<> {1} Typ_Erschliessung_Linienobjekt;
-      Erschliessung_Linienobjekt -- {0..*} Erschliessung_Linienobjekt;
-    END Typ_Erschliessung_Linienobjekt_Linie;
-
-    CLASS Erschliessung_Linienobjekt_Pos
-    EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Pos =
-    END Erschliessung_Linienobjekt_Pos;
-
-    /** Beschriftet wir die Abkürzung, welche in der Klasse Typ_Erschliessung_Linienobjekt  erfasst wird.
-     */
-    ASSOCIATION Erschliessung_Linienobjekt_Linie_Pos =
-      Erschliessung_Linienobjekt -<> {1} Erschliessung_Linienobjekt;
-      Erschliessung_Linienobjekt_Pos -- {0..*} Erschliessung_Linienobjekt_Pos;
-    END Erschliessung_Linienobjekt_Linie_Pos;
-
-    CLASS Typ_Erschliessung_Punktobjekt
-    EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Typ =
-      Typ_Kt : MANDATORY EP_Typ_Kanton_Erschliessung_Punktobjekt;
-      /** 4-stelliger kommunaler Code. Wird durch die Gemeinde vergeben. Im Objektkatalog ist definiert, welche Werte des kommunalen Codes erlaubt sind.
-       */
-      Code_kommunal : MANDATORY TEXT*12;
-    END Typ_Erschliessung_Punktobjekt;
+    ASSOCIATION Typ_Erschliessung_Flaechenobjekt_Dokument =
+      Typ_Erschliessung_Flaechenobjekt -- {0..*} Typ_Erschliessung_Flaechenobjekt;
+      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
+    END Typ_Erschliessung_Flaechenobjekt_Dokument;
 
     /** Siehe in der Arbeitshilfe
      */
@@ -720,6 +567,29 @@ VERSION "2020-10-05"  =
       Typ_Erschliessung_Punktobjekt -- {0..*} Typ_Erschliessung_Punktobjekt;
       Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
     END Typ_Erschliessung_Punktobjekt_Dokument;
+
+    CLASS Erschliessung_Flaechenobjekt =
+      Geometrie : MANDATORY SO_Nutzungsplanung_Nachfuehrung_20201005.Einzelflaeche;
+      /** SOBAU-NP Nummer bei laufenden Änderungen
+       */
+      Geschaefts_Nummer : TEXT*20;
+      Rechtsstatus : MANDATORY SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsstatus;
+      /** Datum Publikation im Amtsblatt
+       */
+      publiziertAb : MANDATORY INTERLIS.XMLDate;
+      /** Bemerkung zu den einzelnen Erschliessungsobjekten.
+       */
+      Bemerkungen : SO_Nutzungsplanung_Nachfuehrung_20201005.Bemerkungen_Typ;
+      /** Name der Firma die die Daten erfasst hat.
+       */
+      Erfasser : TEXT*80;
+      /** Datum der Erfassung
+       */
+      Datum : MANDATORY INTERLIS.XMLDate;
+      /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
+       */
+      publiziertBis : TEXT*20;
+    END Erschliessung_Flaechenobjekt;
 
     CLASS Erschliessung_Punktobjekt =
       Geometrie : MANDATORY GeometryCHLV95_V1.Coord2;
@@ -744,6 +614,20 @@ VERSION "2020-10-05"  =
       publiziertBis : TEXT*20;
     END Erschliessung_Punktobjekt;
 
+    /** Typ_Erschliessung_Linienobjekt kann mehrere Erschliessung-Geometrien haben
+     */
+    ASSOCIATION Typ_Erschliessung_Linienobjekt_Linie =
+      Typ_Erschliessung_Linienobjekt -<> {1} Typ_Erschliessung_Linienobjekt;
+      Erschliessung_Linienobjekt -- {0..*} Erschliessung_Linienobjekt;
+    END Typ_Erschliessung_Linienobjekt_Linie;
+
+    /** Typ_Erschliessung_Flaecheobjekt kann mehrere Erschliessung-Geometrien haben.
+     */
+    ASSOCIATION Typ_Erschliessung_Flaechenobjekt_Flaeche =
+      Typ_Erschliessung_Flaechenobjekt -<> {1} Typ_Erschliessung_Flaechenobjekt;
+      Erschliessung_Flaechenobjekt -- {0..*} Erschliessung_Flaechenobjekt;
+    END Typ_Erschliessung_Flaechenobjekt_Flaeche;
+
     /** Typ_Erschliessung_Punktobjekt kann mehrere Erschliessung-Geometrien haben
      */
     ASSOCIATION Typ_Erschliessung_Punktobjekt_Punkt =
@@ -751,17 +635,67 @@ VERSION "2020-10-05"  =
       Erschliessung_Punktobjekt -- {0..*} Erschliessung_Punktobjekt;
     END Typ_Erschliessung_Punktobjekt_Punkt;
 
-    CLASS Erschliessung_Punktobjekt_Pos
-    EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Pos =
-    END Erschliessung_Punktobjekt_Pos;
-
-    /** Beschriftet wir die Abkürzung, welche in der Klasse Typ_Erschliessung_Punktobjekt  erfasst wird.
-     */
-    ASSOCIATION Erschliessung_Punktobjekt_Punkt_Pos =
-      Erschliessung_Punktobjekt -<> {1} Erschliessung_Punktobjekt;
-      Erschliessung_Punktobjekt_Pos -- {0..*} Erschliessung_Punktobjekt_Pos;
-    END Erschliessung_Punktobjekt_Punkt_Pos;
-
   END Erschliessungsplanung;
+
+  TOPIC Laermempfindlichkeitsstufen =
+    OID AS INTERLIS.UUIDOID;
+    DEPENDS ON SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften,SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung;
+
+    DOMAIN
+
+      Typ_Kanton_Empfindlichkeitsstufen = (
+        N680_Empfindlichkeitsstufe_I,
+        N681_Empfindlichkeitsstufe_II,
+        N682_Empfindlichkeitsstufe_II_aufgestuft,
+        N683_Empfindlichkeitsstufe_III,
+        N684_Empfindlichkeitsstufe_III_aufgestuft,
+        N685_Empfindlichkeitsstufe_IV,
+        N686_keine_Empfindlichkeitsstufe
+      );
+
+    CLASS Empfindlichkeitsstufen =
+      /** Geometrie als Gebietseinteilung. Überlappungen bei Radien mit einer
+       * Pfeilhöhe <1 mm werden toleriert.
+       */
+      Geometrie : MANDATORY SO_Nutzungsplanung_Nachfuehrung_20201005.Einzelflaeche;
+      /** SOBAU-NP Nummer bei laufenden Änderungen
+       */
+      Geschaefts_Nummer : TEXT*20;
+      Rechtsstatus : MANDATORY SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsstatus;
+      /** Datum Publikation im Amtsblatt
+       */
+      publiziertAb : MANDATORY INTERLIS.XMLDate;
+      /** Bemerkung zu der einzelnen Grundnutzungsgeometrie.
+       */
+      Bemerkungen : SO_Nutzungsplanung_Nachfuehrung_20201005.Bemerkungen_Typ;
+      /** Name der Firma die die Daten erfasst hat.
+       */
+      Erfasser : TEXT*80;
+      /** Datum der Erfassung
+       */
+      Datum : MANDATORY INTERLIS.XMLDate;
+      /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
+       */
+      publiziertBis : TEXT*20;
+    END Empfindlichkeitsstufen;
+
+    CLASS Typ_Empfindlichkeitsstufen
+    EXTENDS SO_Nutzungsplanung_Nachfuehrung_20201005.Nutzungsplanung.Typ =
+      Typ_Kt : MANDATORY Typ_Kanton_Empfindlichkeitsstufen;
+    END Typ_Empfindlichkeitsstufen;
+
+    ASSOCIATION Typ_Empfindlichkeitsstufen_Dokument =
+      Dokument (EXTERNAL) -- {0..*} SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften.Dokument;
+      Typ_Empfindlichkeitsstufen -- {0..*} Typ_Empfindlichkeitsstufen;
+    END Typ_Empfindlichkeitsstufen_Dokument;
+
+    /** Ein Typ_Empfindlichkeitsstufen kann mehrere Geometrien Empfindlichkeitsstufen der haben
+     */
+    ASSOCIATION Typ_Empfindlichkeitsstufen_Empfindlichkeitsstufen =
+      Typ_Empfindlichkeitsstufen -<> {1} Typ_Empfindlichkeitsstufen;
+      Empfindlichkeitsstufen -- {0..*} Empfindlichkeitsstufen;
+    END Typ_Empfindlichkeitsstufen_Empfindlichkeitsstufen;
+
+  END Laermempfindlichkeitsstufen;
 
 END SO_Nutzungsplanung_Nachfuehrung_20201005.

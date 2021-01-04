@@ -22,3 +22,6 @@ Import Daten in Schema arp_npl
 ```
 java -jar C:/Users/bjsvwlue/Documents/ili2pg-4.3.1/ili2pg-4.3.1.jar --import --models SO_Nutzungsplanung_20171118 --dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin --dbschema arp_npl --disableValidation --dataset 2586 C:/Users/bjsvwlue/Documents/arp-npl-nachfuehrung/Testdaten/2586.xtf
 ```
+QGIS-Projekt: Erschliessung Baulinie und Fläche umgesetz. 
+
+todo: Kontrolle alle überlagernden im qml vorhanden? dito erschliessung. Wie kann man einfach Geometrien kopieren mit der Option "Transaktionsgruppe" aktiv?  Darstellun Ercshliessung und Grundnutzung identisch? Checklayer!
