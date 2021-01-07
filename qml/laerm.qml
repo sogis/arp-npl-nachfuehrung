@@ -1,23 +1,23 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis maxScale="0" simplifyLocal="1" version="3.10.11-A Coruña" simplifyAlgorithm="0" simplifyDrawingTol="1" styleCategories="AllStyleCategories" simplifyMaxScale="1" labelsEnabled="0" simplifyDrawingHints="0" readOnly="0" hasScaleBasedVisibilityFlag="0" minScale="1e+08">
+<qgis simplifyAlgorithm="0" maxScale="0" simplifyMaxScale="1" minScale="1e+08" readOnly="0" simplifyDrawingHints="0" labelsEnabled="0" styleCategories="AllStyleCategories" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" version="3.10.11-A Coruña" simplifyLocal="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 symbollevels="0" forceraster="0" enableorderby="0" type="RuleRenderer">
+  <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
     <rules key="{b1aa3313-5eac-4b00-a9b8-51518932c8fe}">
-      <rule key="{1c797371-fc69-418e-a9d1-95a5f40e2600}" symbol="0" filter=" &quot;nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt&quot; = 'N680_Empfindlichkeitsstufe_I' " label="Empfindlichkeitsstufe I"/>
-      <rule key="{ff49a815-e43c-4ff9-aac1-778afc25f817}" symbol="1" filter=" &quot;nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt&quot; = 'N681_Empfindlichkeitsstufe_II' " label="Empfindlichkeitsstufe II"/>
-      <rule key="{75cace93-afe9-4be7-bcf4-e1bf86bac8b6}" symbol="2" filter=" &quot;nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt&quot; = 'N682_Empfindlichkeitsstufe_II_aufgestuft' " label="Empfindlichkeitsstufe II aufgestuft"/>
-      <rule key="{9e88902f-051f-499b-aa17-e7ef19cc4200}" symbol="3" filter=" &quot;nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt&quot; = 'N683_Empfindlichkeitsstufe_III'" label="Empfindlichkeitsstufe III"/>
-      <rule key="{4b42835b-a25a-4c36-9a6b-ca6ea13ece4a}" symbol="4" filter=" &quot;nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt&quot; = 'N684_Empfindlichkeitsstufe_III_aufgestuft' " label="Empfindlichkeitsstufe III aufgestuft"/>
-      <rule key="{ff49a815-e43c-4ff9-aac1-778afc25f817}" symbol="5" filter=" &quot;nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt&quot; = 'N685_Empfindlichkeitsstufe_IV' " label="Empfindlichkeitsstufe IV"/>
-      <rule key="{54ae3c5e-f854-4056-b313-dc8c4b59658e}" symbol="6" filter=" &quot;nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt&quot; = 'N686_keine_Empfindlichkeitsstufe' " label="keine Empfindlichkeitsstufe"/>
+      <rule filter="attribute(get_feature( 'laermmpfhktsstfen_typ_empfindlichkeitsstufen_cef149a2_8605_496f_a412_d5d049432c9e','t_id', &quot;typ_empfindlichkeitsstufen&quot;),'typ_kt')&#xd;&#xa; = 'N680_Empfindlichkeitsstufe_I' " label="Empfindlichkeitsstufe I" key="{1c797371-fc69-418e-a9d1-95a5f40e2600}" symbol="0"/>
+      <rule filter="attribute(get_feature( 'laermmpfhktsstfen_typ_empfindlichkeitsstufen_cef149a2_8605_496f_a412_d5d049432c9e','t_id', &quot;typ_empfindlichkeitsstufen&quot;),'typ_kt')&#xd;&#xa;= 'N681_Empfindlichkeitsstufe_II' " label="Empfindlichkeitsstufe II" key="{ff49a815-e43c-4ff9-aac1-778afc25f817}" symbol="1"/>
+      <rule filter="attribute(get_feature( 'laermmpfhktsstfen_typ_empfindlichkeitsstufen_cef149a2_8605_496f_a412_d5d049432c9e','t_id', &quot;typ_empfindlichkeitsstufen&quot;),'typ_kt')&#xd;&#xa; = 'N682_Empfindlichkeitsstufe_II_aufgestuft' " label="Empfindlichkeitsstufe II aufgestuft" key="{75cace93-afe9-4be7-bcf4-e1bf86bac8b6}" symbol="2"/>
+      <rule filter="attribute(get_feature( 'laermmpfhktsstfen_typ_empfindlichkeitsstufen_cef149a2_8605_496f_a412_d5d049432c9e','t_id', &quot;typ_empfindlichkeitsstufen&quot;),'typ_kt')&#xd;&#xa; = 'N683_Empfindlichkeitsstufe_III'" label="Empfindlichkeitsstufe III" key="{9e88902f-051f-499b-aa17-e7ef19cc4200}" symbol="3"/>
+      <rule filter="attribute(get_feature( 'laermmpfhktsstfen_typ_empfindlichkeitsstufen_cef149a2_8605_496f_a412_d5d049432c9e','t_id', &quot;typ_empfindlichkeitsstufen&quot;),'typ_kt')&#xd;&#xa; = 'N684_Empfindlichkeitsstufe_III_aufgestuft' " label="Empfindlichkeitsstufe III aufgestuft" key="{4b42835b-a25a-4c36-9a6b-ca6ea13ece4a}" symbol="4"/>
+      <rule filter="attribute(get_feature( 'laermmpfhktsstfen_typ_empfindlichkeitsstufen_cef149a2_8605_496f_a412_d5d049432c9e','t_id', &quot;typ_empfindlichkeitsstufen&quot;),'typ_kt')&#xd;&#xa; = 'N685_Empfindlichkeitsstufe_IV' " label="Empfindlichkeitsstufe IV" key="{ff49a815-e43c-4ff9-aac1-778afc25f817}" symbol="5"/>
+      <rule filter="attribute(get_feature( 'laermmpfhktsstfen_typ_empfindlichkeitsstufen_cef149a2_8605_496f_a412_d5d049432c9e','t_id', &quot;typ_empfindlichkeitsstufen&quot;),'typ_kt')&#xd;&#xa; = 'N686_keine_Empfindlichkeitsstufe' " label="keine Empfindlichkeitsstufe" key="{54ae3c5e-f854-4056-b313-dc8c4b59658e}" symbol="6"/>
     </rules>
     <symbols>
-      <symbol clip_to_extent="1" force_rhr="0" alpha="0.6" name="0" type="fill">
-        <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+      <symbol clip_to_extent="1" alpha="0.6" type="fill" name="0" force_rhr="0">
+        <layer pass="0" locked="0" enabled="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="255,242,0,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -31,15 +31,15 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" alpha="0.6" name="1" type="fill">
-        <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+      <symbol clip_to_extent="1" alpha="0.6" type="fill" name="1" force_rhr="0">
+        <layer pass="0" locked="0" enabled="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="255,166,0,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -53,15 +53,15 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" alpha="0.6" name="2" type="fill">
-        <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+      <symbol clip_to_extent="1" alpha="0.6" type="fill" name="2" force_rhr="0">
+        <layer pass="0" locked="0" enabled="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="255,166,0,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -75,13 +75,13 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="0" locked="0" class="PointPatternFill" enabled="1">
+        <layer pass="0" locked="0" enabled="1" class="PointPatternFill">
           <prop v="2" k="displacement_x"/>
           <prop v="3x:0,0,0,0,0,0" k="displacement_x_map_unit_scale"/>
           <prop v="MM" k="displacement_x_unit"/>
@@ -104,13 +104,13 @@
           <prop v="MM" k="outline_width_unit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="@2@1" type="marker">
-            <layer pass="0" locked="0" class="SimpleMarker" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" type="marker" name="@2@1" force_rhr="0">
+            <layer pass="0" locked="0" enabled="1" class="SimpleMarker">
               <prop v="0" k="angle"/>
               <prop v="255,166,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
@@ -131,17 +131,17 @@
               <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" alpha="0.6" name="3" type="fill">
-        <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+      <symbol clip_to_extent="1" alpha="0.6" type="fill" name="3" force_rhr="0">
+        <layer pass="0" locked="0" enabled="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="255,77,0,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -155,15 +155,15 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" alpha="0.6" name="4" type="fill">
-        <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+      <symbol clip_to_extent="1" alpha="0.6" type="fill" name="4" force_rhr="0">
+        <layer pass="0" locked="0" enabled="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="255,77,0,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -177,13 +177,13 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer pass="0" locked="0" class="PointPatternFill" enabled="1">
+        <layer pass="0" locked="0" enabled="1" class="PointPatternFill">
           <prop v="2" k="displacement_x"/>
           <prop v="3x:0,0,0,0,0,0" k="displacement_x_map_unit_scale"/>
           <prop v="MM" k="displacement_x_unit"/>
@@ -206,13 +206,13 @@
           <prop v="MM" k="outline_width_unit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" alpha="1" name="@4@1" type="marker">
-            <layer pass="0" locked="0" class="SimpleMarker" enabled="1">
+          <symbol clip_to_extent="1" alpha="1" type="marker" name="@4@1" force_rhr="0">
+            <layer pass="0" locked="0" enabled="1" class="SimpleMarker">
               <prop v="0" k="angle"/>
               <prop v="0,0,0,255" k="color"/>
               <prop v="1" k="horizontal_anchor_point"/>
@@ -233,17 +233,17 @@
               <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" name="name" type="QString"/>
+                  <Option type="QString" name="name" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" name="type" type="QString"/>
+                  <Option type="QString" name="type" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" alpha="0.6" name="5" type="fill">
-        <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+      <symbol clip_to_extent="1" alpha="0.6" type="fill" name="5" force_rhr="0">
+        <layer pass="0" locked="0" enabled="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="230,0,0,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -257,15 +257,15 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" alpha="0.6" name="6" type="fill">
-        <layer pass="0" locked="0" class="SimpleFill" enabled="1">
+      <symbol clip_to_extent="1" alpha="0.6" type="fill" name="6" force_rhr="0">
+        <layer pass="0" locked="0" enabled="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="146,146,146,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -279,9 +279,9 @@
           <prop v="solid" k="style"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" name="name" type="QString"/>
+              <Option type="QString" name="name" value=""/>
               <Option name="properties"/>
-              <Option value="collection" name="type" type="QString"/>
+              <Option type="QString" name="type" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -289,6 +289,9 @@
     </symbols>
   </renderer-v2>
   <customproperties>
+    <property key="dualview/previewExpressions">
+      <value>"t_id"</value>
+    </property>
     <property key="embeddedWidgets/count" value="0"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
@@ -297,27 +300,26 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
-    <DiagramCategory maxScaleDenominator="1e+08" labelPlacementMethod="XHeight" scaleDependency="Area" lineSizeScale="3x:0,0,0,0,0,0" rotationOffset="270" penWidth="0" enabled="0" lineSizeType="MM" height="15" penColor="#000000" backgroundAlpha="255" barWidth="5" scaleBasedVisibility="0" minScaleDenominator="0" sizeScale="3x:0,0,0,0,0,0" diagramOrientation="Up" opacity="1" width="15" backgroundColor="#ffffff" sizeType="MM" penAlpha="255" minimumSize="0">
-      <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
-      <attribute color="#000000" field="" label=""/>
+    <DiagramCategory backgroundColor="#ffffff" enabled="0" minScaleDenominator="0" height="15" lineSizeScale="3x:0,0,0,0,0,0" penWidth="0" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" diagramOrientation="Up" opacity="1" labelPlacementMethod="XHeight" penColor="#000000" minimumSize="0" maxScaleDenominator="1e+08" barWidth="5" lineSizeType="MM" penAlpha="255" sizeType="MM" scaleDependency="Area" width="15" rotationOffset="270">
+      <fontProperties description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings obstacle="0" zIndex="0" dist="0" priority="0" showAll="1" linePlacementFlags="18" placement="1">
+  <DiagramLayerSettings placement="1" linePlacementFlags="18" obstacle="0" zIndex="0" dist="0" priority="0" showAll="1">
     <properties>
       <Option type="Map">
-        <Option value="" name="name" type="QString"/>
+        <Option type="QString" name="name" value=""/>
         <Option name="properties"/>
-        <Option value="collection" name="type" type="QString"/>
+        <Option type="QString" name="type" value="collection"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration type="Map">
-      <Option name="QgsGeometryGapCheck" type="Map">
-        <Option value="0" name="allowedGapsBuffer" type="double"/>
-        <Option value="false" name="allowedGapsEnabled" type="bool"/>
-        <Option value="" name="allowedGapsLayer" type="QString"/>
+      <Option type="Map" name="QgsGeometryGapCheck">
+        <Option type="double" name="allowedGapsBuffer" value="0"/>
+        <Option type="bool" name="allowedGapsEnabled" value="false"/>
+        <Option type="QString" name="allowedGapsLayer" value=""/>
       </Option>
     </checkConfiguration>
   </geometryOptions>
@@ -368,8 +370,8 @@
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option value="true" name="calendar_popup" type="bool"/>
-            <Option value="dd.MM.yy" name="display_format" type="QString"/>
+            <Option type="bool" name="calendar_popup" value="true"/>
+            <Option type="QString" name="display_format" value="dd.MM.yy"/>
           </Option>
         </config>
       </editWidget>
@@ -378,7 +380,7 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option value="true" name="IsMultiline" type="bool"/>
+            <Option type="bool" name="IsMultiline" value="true"/>
           </Option>
         </config>
       </editWidget>
@@ -394,8 +396,8 @@
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option value="true" name="calendar_popup" type="bool"/>
-            <Option value="dd.MM.yy" name="display_format" type="QString"/>
+            <Option type="bool" name="calendar_popup" value="true"/>
+            <Option type="QString" name="display_format" value="dd.MM.yy"/>
           </Option>
         </config>
       </editWidget>
@@ -404,90 +406,13 @@
       <editWidget type="DateTime">
         <config>
           <Option type="Map">
-            <Option value="true" name="calendar_popup" type="bool"/>
-            <Option value="dd.MM.yy" name="display_format" type="QString"/>
+            <Option type="bool" name="calendar_popup" value="true"/>
+            <Option type="QString" name="display_format" value="dd.MM.yy"/>
           </Option>
         </config>
       </editWidget>
     </field>
-    <field name="typ_ueberlagernd_flaeche">
-      <editWidget type="RelationReference">
-        <config>
-          <Option type="Map">
-            <Option value="true" name="AllowAddFeatures" type="bool"/>
-            <Option value="true" name="AllowNULL" type="bool"/>
-            <Option value="true" name="OrderByValue" type="bool"/>
-            <Option value="nutzngsplnng_brlgrnd_flche_typ_ueberlagernd_flaeche_fkey" name="Relation" type="QString"/>
-            <Option value="false" name="ShowForm" type="bool"/>
-            <Option value="false" name="ShowOpenFormButton" type="bool"/>
-          </Option>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_t_basket">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_t_datasetname">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_t_ili_tid">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_code_kommunal">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_bezeichnung">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_abkuerzung">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_verbindlichkeit">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_bemerkungen">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_nachfuehrungseinheit">
+    <field name="typ_empfindlichkeitsstufen">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -496,132 +421,82 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias index="0" name="" field="t_id"/>
-    <alias index="1" name="" field="t_basket"/>
-    <alias index="2" name="" field="t_datasetname"/>
-    <alias index="3" name="" field="t_ili_tid"/>
-    <alias index="4" name="" field="geschaefts_nummer"/>
-    <alias index="5" name="" field="rechtsstatus"/>
-    <alias index="6" name="" field="publiziertab"/>
-    <alias index="7" name="" field="bemerkungen"/>
-    <alias index="8" name="" field="erfasser"/>
-    <alias index="9" name="" field="datum"/>
-    <alias index="10" name="" field="publiziertbis"/>
-    <alias index="11" name="" field="typ_ueberlagernd_flaeche"/>
-    <alias index="12" name="" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_basket"/>
-    <alias index="13" name="" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_datasetname"/>
-    <alias index="14" name="" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_ili_tid"/>
-    <alias index="15" name="" field="nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt"/>
-    <alias index="16" name="Code_kommunal" field="nutzungsplanung_typ_ueberlagernd_flaeche_code_kommunal"/>
-    <alias index="17" name="Bezeichnung" field="nutzungsplanung_typ_ueberlagernd_flaeche_bezeichnung"/>
-    <alias index="18" name="Abkuerzung" field="nutzungsplanung_typ_ueberlagernd_flaeche_abkuerzung"/>
-    <alias index="19" name="Verbindlichkeit" field="nutzungsplanung_typ_ueberlagernd_flaeche_verbindlichkeit"/>
-    <alias index="20" name="Bemerkungen" field="nutzungsplanung_typ_ueberlagernd_flaeche_bemerkungen"/>
-    <alias index="21" name="Nachfuehrungseinheit" field="nutzungsplanung_typ_ueberlagernd_flaeche_nachfuehrungseinheit"/>
+    <alias index="0" field="t_id" name=""/>
+    <alias index="1" field="t_basket" name=""/>
+    <alias index="2" field="t_datasetname" name=""/>
+    <alias index="3" field="t_ili_tid" name=""/>
+    <alias index="4" field="geschaefts_nummer" name=""/>
+    <alias index="5" field="rechtsstatus" name=""/>
+    <alias index="6" field="publiziertab" name=""/>
+    <alias index="7" field="bemerkungen" name=""/>
+    <alias index="8" field="erfasser" name=""/>
+    <alias index="9" field="datum" name=""/>
+    <alias index="10" field="publiziertbis" name=""/>
+    <alias index="11" field="typ_empfindlichkeitsstufen" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default expression="" applyOnUpdate="0" field="t_id"/>
-    <default expression="" applyOnUpdate="0" field="t_basket"/>
-    <default expression="" applyOnUpdate="0" field="t_datasetname"/>
-    <default expression="" applyOnUpdate="0" field="t_ili_tid"/>
-    <default expression="" applyOnUpdate="0" field="geschaefts_nummer"/>
-    <default expression="" applyOnUpdate="0" field="rechtsstatus"/>
-    <default expression="" applyOnUpdate="0" field="publiziertab"/>
-    <default expression="" applyOnUpdate="0" field="bemerkungen"/>
-    <default expression="" applyOnUpdate="0" field="erfasser"/>
-    <default expression="" applyOnUpdate="0" field="datum"/>
-    <default expression="" applyOnUpdate="0" field="publiziertbis"/>
-    <default expression="" applyOnUpdate="0" field="typ_ueberlagernd_flaeche"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_basket"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_datasetname"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_ili_tid"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_code_kommunal"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_bezeichnung"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_abkuerzung"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_verbindlichkeit"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_bemerkungen"/>
-    <default expression="" applyOnUpdate="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_nachfuehrungseinheit"/>
+    <default field="t_id" applyOnUpdate="0" expression=""/>
+    <default field="t_basket" applyOnUpdate="0" expression=""/>
+    <default field="t_datasetname" applyOnUpdate="0" expression=""/>
+    <default field="t_ili_tid" applyOnUpdate="0" expression=""/>
+    <default field="geschaefts_nummer" applyOnUpdate="0" expression=""/>
+    <default field="rechtsstatus" applyOnUpdate="0" expression=""/>
+    <default field="publiziertab" applyOnUpdate="0" expression=""/>
+    <default field="bemerkungen" applyOnUpdate="0" expression=""/>
+    <default field="erfasser" applyOnUpdate="0" expression=""/>
+    <default field="datum" applyOnUpdate="0" expression=""/>
+    <default field="publiziertbis" applyOnUpdate="0" expression=""/>
+    <default field="typ_empfindlichkeitsstufen" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
-    <constraint constraints="3" exp_strength="0" notnull_strength="1" field="t_id" unique_strength="1"/>
-    <constraint constraints="1" exp_strength="0" notnull_strength="1" field="t_basket" unique_strength="0"/>
-    <constraint constraints="1" exp_strength="0" notnull_strength="1" field="t_datasetname" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="t_ili_tid" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="geschaefts_nummer" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="rechtsstatus" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="publiziertab" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="bemerkungen" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="erfasser" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="datum" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="publiziertbis" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="typ_ueberlagernd_flaeche" unique_strength="0"/>
-    <constraint constraints="1" exp_strength="0" notnull_strength="1" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_basket" unique_strength="0"/>
-    <constraint constraints="1" exp_strength="0" notnull_strength="1" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_datasetname" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_ili_tid" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_code_kommunal" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_bezeichnung" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_abkuerzung" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_verbindlichkeit" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_bemerkungen" unique_strength="0"/>
-    <constraint constraints="0" exp_strength="0" notnull_strength="0" field="nutzungsplanung_typ_ueberlagernd_flaeche_nachfuehrungseinheit" unique_strength="0"/>
+    <constraint field="t_id" exp_strength="0" unique_strength="1" notnull_strength="1" constraints="3"/>
+    <constraint field="t_basket" exp_strength="0" unique_strength="0" notnull_strength="1" constraints="1"/>
+    <constraint field="t_datasetname" exp_strength="0" unique_strength="0" notnull_strength="1" constraints="1"/>
+    <constraint field="t_ili_tid" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="geschaefts_nummer" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="rechtsstatus" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="publiziertab" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="bemerkungen" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="erfasser" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="datum" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="publiziertbis" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint field="typ_empfindlichkeitsstufen" exp_strength="0" unique_strength="0" notnull_strength="0" constraints="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" field="t_id" exp=""/>
-    <constraint desc="" field="t_basket" exp=""/>
-    <constraint desc="" field="t_datasetname" exp=""/>
-    <constraint desc="" field="t_ili_tid" exp=""/>
-    <constraint desc="" field="geschaefts_nummer" exp=""/>
-    <constraint desc="" field="rechtsstatus" exp=""/>
-    <constraint desc="" field="publiziertab" exp=""/>
-    <constraint desc="" field="bemerkungen" exp=""/>
-    <constraint desc="" field="erfasser" exp=""/>
-    <constraint desc="" field="datum" exp=""/>
-    <constraint desc="" field="publiziertbis" exp=""/>
-    <constraint desc="" field="typ_ueberlagernd_flaeche" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_basket" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_datasetname" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_t_ili_tid" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_code_kommunal" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_bezeichnung" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_abkuerzung" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_verbindlichkeit" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_bemerkungen" exp=""/>
-    <constraint desc="" field="nutzungsplanung_typ_ueberlagernd_flaeche_nachfuehrungseinheit" exp=""/>
+    <constraint exp="" field="t_id" desc=""/>
+    <constraint exp="" field="t_basket" desc=""/>
+    <constraint exp="" field="t_datasetname" desc=""/>
+    <constraint exp="" field="t_ili_tid" desc=""/>
+    <constraint exp="" field="geschaefts_nummer" desc=""/>
+    <constraint exp="" field="rechtsstatus" desc=""/>
+    <constraint exp="" field="publiziertab" desc=""/>
+    <constraint exp="" field="bemerkungen" desc=""/>
+    <constraint exp="" field="erfasser" desc=""/>
+    <constraint exp="" field="datum" desc=""/>
+    <constraint exp="" field="publiziertbis" desc=""/>
+    <constraint exp="" field="typ_empfindlichkeitsstufen" desc=""/>
   </constraintExpressions>
   <expressionfields/>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="">
+  <attributetableconfig sortOrder="0" sortExpression="&quot;typ_empfindlichkeitsstufen&quot;" actionWidgetStyle="dropDown">
     <columns>
-      <column width="-1" name="t_id" type="field" hidden="0"/>
-      <column width="-1" name="t_ili_tid" type="field" hidden="0"/>
-      <column width="-1" name="rechtsstatus" type="field" hidden="0"/>
-      <column width="-1" name="publiziertab" type="field" hidden="0"/>
-      <column width="-1" name="bemerkungen" type="field" hidden="0"/>
-      <column width="-1" name="erfasser" type="field" hidden="0"/>
-      <column width="-1" name="datum" type="field" hidden="0"/>
-      <column width="-1" type="actions" hidden="1"/>
-      <column width="-1" name="t_basket" type="field" hidden="0"/>
-      <column width="-1" name="t_datasetname" type="field" hidden="0"/>
-      <column width="-1" name="geschaefts_nummer" type="field" hidden="0"/>
-      <column width="-1" name="publiziertbis" type="field" hidden="0"/>
-      <column width="-1" name="typ_ueberlagernd_flaeche" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_t_basket" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_t_datasetname" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_t_ili_tid" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_code_kommunal" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_bezeichnung" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_abkuerzung" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_verbindlichkeit" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_bemerkungen" type="field" hidden="0"/>
-      <column width="-1" name="nutzungsplanung_typ_ueberlagernd_flaeche_nachfuehrungseinheit" type="field" hidden="0"/>
+      <column hidden="0" width="-1" type="field" name="t_id"/>
+      <column hidden="0" width="-1" type="field" name="t_ili_tid"/>
+      <column hidden="0" width="-1" type="field" name="rechtsstatus"/>
+      <column hidden="0" width="-1" type="field" name="publiziertab"/>
+      <column hidden="0" width="-1" type="field" name="bemerkungen"/>
+      <column hidden="0" width="-1" type="field" name="erfasser"/>
+      <column hidden="0" width="-1" type="field" name="datum"/>
+      <column hidden="1" width="-1" type="actions"/>
+      <column hidden="0" width="-1" type="field" name="t_basket"/>
+      <column hidden="0" width="-1" type="field" name="t_datasetname"/>
+      <column hidden="0" width="-1" type="field" name="geschaefts_nummer"/>
+      <column hidden="0" width="-1" type="field" name="publiziertbis"/>
+      <column hidden="0" width="-1" type="field" name="typ_empfindlichkeitsstufen"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -653,45 +528,46 @@ def my_form_open(dialog, layer, feature):
   <featformsuppress>0</featformsuppress>
   <editorlayout>generatedlayout</editorlayout>
   <attributeEditorForm>
-    <attributeEditorContainer visibilityExpressionEnabled="0" groupBox="0" name="General" visibilityExpression="" showLabel="1" columnCount="2">
-      <attributeEditorField index="7" name="bemerkungen" showLabel="1"/>
-      <attributeEditorField index="9" name="datum" showLabel="1"/>
-      <attributeEditorField index="8" name="erfasser" showLabel="1"/>
-      <attributeEditorField index="-1" name="geometrie" showLabel="1"/>
-      <attributeEditorField index="4" name="geschaefts_nummer" showLabel="1"/>
-      <attributeEditorField index="6" name="publiziertab" showLabel="1"/>
-      <attributeEditorField index="10" name="publiziertbis" showLabel="1"/>
-      <attributeEditorField index="5" name="rechtsstatus" showLabel="1"/>
-      <attributeEditorField index="2" name="t_datasetname" showLabel="1"/>
-      <attributeEditorField index="11" name="typ_ueberlagernd_flaeche" showLabel="1"/>
+    <attributeEditorContainer groupBox="0" visibilityExpression="" visibilityExpressionEnabled="0" showLabel="1" columnCount="2" name="General">
+      <attributeEditorField index="7" showLabel="1" name="bemerkungen"/>
+      <attributeEditorField index="9" showLabel="1" name="datum"/>
+      <attributeEditorField index="8" showLabel="1" name="erfasser"/>
+      <attributeEditorField index="-1" showLabel="1" name="geometrie"/>
+      <attributeEditorField index="4" showLabel="1" name="geschaefts_nummer"/>
+      <attributeEditorField index="6" showLabel="1" name="publiziertab"/>
+      <attributeEditorField index="10" showLabel="1" name="publiziertbis"/>
+      <attributeEditorField index="5" showLabel="1" name="rechtsstatus"/>
+      <attributeEditorField index="2" showLabel="1" name="t_datasetname"/>
+      <attributeEditorField index="-1" showLabel="1" name="typ_ueberlagernd_flaeche"/>
     </attributeEditorContainer>
-    <attributeEditorContainer visibilityExpressionEnabled="0" groupBox="0" name="nutzungsplanung_ueberlagernd_flaeche_pos" visibilityExpression="" showLabel="1" columnCount="1">
-      <attributeEditorRelation showUnlinkButton="1" relation="nutzngsplnng_grnd_flch_pos_ueberlagernd_flaeche_fkey" name="nutzngsplnng_grnd_flch_pos_ueberlagernd_flaeche_fkey" showLinkButton="1" showLabel="1"/>
+    <attributeEditorContainer groupBox="0" visibilityExpression="" visibilityExpressionEnabled="0" showLabel="1" columnCount="1" name="nutzungsplanung_ueberlagernd_flaeche_pos">
+      <attributeEditorRelation showLabel="1" relation="" name="" showLinkButton="1" showUnlinkButton="1"/>
     </attributeEditorContainer>
   </attributeEditorForm>
   <editable>
-    <field editable="1" name="bemerkungen"/>
-    <field editable="1" name="datum"/>
-    <field editable="1" name="erfasser"/>
-    <field editable="1" name="geschaefts_nummer"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_abkuerzung"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_bemerkungen"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_bezeichnung"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_code_kommunal"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_nachfuehrungseinheit"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_t_basket"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_t_datasetname"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_t_ili_tid"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt"/>
-    <field editable="0" name="nutzungsplanung_typ_ueberlagernd_flaeche_verbindlichkeit"/>
-    <field editable="1" name="publiziertab"/>
-    <field editable="1" name="publiziertbis"/>
-    <field editable="1" name="rechtsstatus"/>
-    <field editable="1" name="t_basket"/>
-    <field editable="1" name="t_datasetname"/>
-    <field editable="1" name="t_id"/>
-    <field editable="1" name="t_ili_tid"/>
-    <field editable="1" name="typ_ueberlagernd_flaeche"/>
+    <field name="bemerkungen" editable="1"/>
+    <field name="datum" editable="1"/>
+    <field name="erfasser" editable="1"/>
+    <field name="geschaefts_nummer" editable="1"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_abkuerzung" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_bemerkungen" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_bezeichnung" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_code_kommunal" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_nachfuehrungseinheit" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_t_basket" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_t_datasetname" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_t_ili_tid" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_typ_kt" editable="0"/>
+    <field name="nutzungsplanung_typ_ueberlagernd_flaeche_verbindlichkeit" editable="0"/>
+    <field name="publiziertab" editable="1"/>
+    <field name="publiziertbis" editable="1"/>
+    <field name="rechtsstatus" editable="1"/>
+    <field name="t_basket" editable="1"/>
+    <field name="t_datasetname" editable="1"/>
+    <field name="t_id" editable="1"/>
+    <field name="t_ili_tid" editable="1"/>
+    <field name="typ_empfindlichkeitsstufen" editable="1"/>
+    <field name="typ_ueberlagernd_flaeche" editable="1"/>
   </editable>
   <labelOnTop>
     <field labelOnTop="0" name="bemerkungen"/>
@@ -715,12 +591,13 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="t_datasetname"/>
     <field labelOnTop="0" name="t_id"/>
     <field labelOnTop="0" name="t_ili_tid"/>
+    <field labelOnTop="0" name="typ_empfindlichkeitsstufen"/>
     <field labelOnTop="0" name="typ_ueberlagernd_flaeche"/>
   </labelOnTop>
   <widgets>
     <widget name="nutzngsplnng_grnd_flch_pos_ueberlagernd_flaeche_fkey">
       <config type="Map">
-        <Option value="" name="nm-rel" type="QString"/>
+        <Option type="QString" name="nm-rel" value=""/>
       </config>
     </widget>
   </widgets>

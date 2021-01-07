@@ -12,7 +12,7 @@ INSERT INTO arp_nutzungsplanung.t_ili2db_basket
 SELECT 
    t_id,
    dataset,
-   topic,
+   replace (topic, 'SO_Nutzungsplanung_20171118', 'SO_Nutzungsplanung_Nachfuehrung_20201005')AS topic,
    t_ili_tid,
    attachmentkey,
    domains
@@ -62,7 +62,7 @@ SELECT
    abkuerzung,
    verbindlichkeit,
    bemerkungen,
-   '' AS nachfuehrungseinheit
+   'Gemeinde' AS nachfuehrungseinheit
 		
 FROM 
    arp_npl.nutzungsplanung_typ_grundnutzung
@@ -117,10 +117,10 @@ SELECT
    bemerkungen,
    CASE typ_kt 
         WHEN 'N526_kantonale_Landwirtschafts_und_Schutzzone_Witi'
-              THEN 'kanton'
+              THEN 'Kanton'
         WHEN 'N610_Perimeter_kantonaler_Nutzungsplan'
-			  THEN 'kanton'
-	    ELSE 'gemeinde'
+			  THEN 'Kanton'
+	    ELSE 'Gemeinde'
    END AS nachfuehrungseinheit
 		
 FROM 
@@ -323,7 +323,7 @@ SELECT
    abkuerzung,
    verbindlichkeit,
    bemerkungen,
-   'gemeinde' AS nachfuehrungseinheit
+   'Gemeinde' AS nachfuehrungseinheit
 		
 FROM 
    arp_npl.nutzungsplanung_typ_ueberlagernd_linie
@@ -349,7 +349,7 @@ SELECT
    ueberlagernd_linie.typ_ueberlagernd_linie
 		
 FROM 
-   arp_npl.nutzungsplanung_typ_ueberlagernd_linie AS ueberlagernd_linie
+   arp_npl.nutzungsplanung_ueberlagernd_linie AS ueberlagernd_linie
    LEFT JOIN arp_npl.nutzungsplanung_typ_ueberlagernd_linie AS typ
    ON typ.t_id = ueberlagernd_linie.typ_ueberlagernd_linie
 WHERE
@@ -385,7 +385,7 @@ SELECT
    abkuerzung,
    verbindlichkeit,
    bemerkungen,
-   'gemeinde' AS nachfuehrungseinheit
+   'Gemeinde' AS nachfuehrungseinheit
 		
 FROM 
    arp_npl.nutzungsplanung_typ_ueberlagernd_punkt
@@ -456,10 +456,10 @@ SELECT
    bemerkungen,
    CASE typ_kt 
         WHEN 'E560_Nationalstrasse'
-              THEN 'kanton'
+              THEN 'Kanton'
         WHEN 'E561_Kantonsstrasse'
-			  THEN 'kanton'
-	    ELSE 'gemeinde'
+			  THEN 'Kanton'
+	    ELSE 'Gemeinde'
    END AS nachfuehrungseinheit
 		
 FROM 
@@ -615,7 +615,7 @@ SELECT
    abkuerzung,
    verbindlichkeit,
    bemerkungen,
-   'gemeinde' AS nachfuehrungseinheit
+   'Gemeinde' AS nachfuehrungseinheit
 		
 FROM 
    arp_npl.nutzungsplanung_typ_ueberlagernd_flaeche

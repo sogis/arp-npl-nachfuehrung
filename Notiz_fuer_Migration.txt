@@ -1,2 +1,3 @@
 - Objekte kontrollieren wo verbindlichkeit != Nutzungsplanungsfestlegend ist.
-- weitere NP festlegungen kontrollieren und nur Nutzungsplanugsfestlegende übernehmen restliche löschen
+- "weitere NP festlegungen" kontrollieren und nur Nutzungsplanugsfestlegende übernehmen restliche löschen
+-  unklassierte Strassen kontrollieren
