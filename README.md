@@ -24,10 +24,24 @@ java -jar C:/Users/bjsvwlue/Documents/ili2pg-4.3.1/ili2pg-4.3.1.jar --import --m
 ```
 Datenumbau Datenumbau.sql ausführen 
 
-Dataset 'Kanton' ergänzen im Schema arp_nutzungsplanung für die Nachführung der Daten mot Nachführungseinheit 'Kanton'
+Schema für Export (models SO_Nutzungsplanung_20171118) ertsellen:
 ```
-INSERT INTO arp_nutzungsplanung.t_ili2db_dataset (t_id, datasetname)
-    VALUES (nextval('arp_nutzungsplanung.t_ili2db_seq'::regclass),'Kanton');
+CREATE SCHEMA arp_nutzungsplanung_export AUTHORIZATION "admin"
+```
+Modell SO_Nutzungsplanung_20171118 in Schema arp_nutzungsplanung_export anlege:
+```
+java -jar C:/Users/bjsvwlue/Documents/ili2pg-4.3.1/ili2pg-4.3.1.jar --schemaimport --models SO_Nutzungsplanung_20171118 --dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin --dbschema arp_nutzungsplanung_export --nameByTopic --defaultSrsCode 2056 --strokeArcs --sqlEnableNull --createGeomIdx --createFkIdx --createUnique --createFk --createNumChecks --createEnumTabs --createDatasetCol --createBasketCol
+```
+Export Befehl für Gemeinde Bsp. Oensingen im DM SO_Nutzungsplanung_Nachfuehrung_20101005
+```
+java -jar C:/Users/bjsvwlue/Documents/ili2pg-4.3.1/ili2pg-4.3.1.jar --export --models SO_Nutzungsplanung_Nachfuehrung_20101005 --dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin --dbschema arp_nutzungsplanung --nameByTopic --defaultSrsCode 2056 --dataset 2407 --disableValidation C:/Users/bjsvwlue/Documents/arp-npl-nachfuehrung/Testdaten/Export_Nachfuehrung/2407_neuesmodell.xtf
+```
+Export Befehl für Gemeinde Bsp. Oensingen im DM SO_Nutzungsplanung_20171118 
+```
+java -jar C:/Users/bjsvwlue/Documents/ili2pg-4.3.1/ili2pg-4.3.1.jar --export --models SO_Nutzungsplanung_20171118 --dbhost localhost --dbport 54321 --dbdatabase edit --dbusr admin --dbpwd admin --dbschema arp_nutzungsplanung_export --nameByTopic --defaultSrsCode 2056 --dataset 2407 --disableValidation C:/Users/bjsvwlue/Documents/arp-npl-nachfuehrung/Testdaten/Export_Nachfuehrung/2407.xtf
 ```
 
-QGIS-Projekt arp_nutzungsplanung_nachfuehrung.qgz todo: basket Vorgabewert noch nicht gelöst 
+Offene Punkte: -> In Phase Realisisrrung lösen 
+-Basket Probelm bei Tabelle Typ_xxx_Dokument noch nicht gelöst. Evtl. Probelm bei QGIS Version 3.10.11. Im QGIS-Projkt ist jeweils der Vorgabewert bei den Tabellen Typ_xxx_Dokument anzupassen. Muss gelöst werden in Phase Realisierung!
+-Löschen von Geometrie bleibt Typ bestehen
+-Dokument Loop
