@@ -119,13 +119,15 @@ SELECT
    CASE rechtsstatus
         WHEN 'laufendeAenderung'
 		      THEN 'AenderungMitVorwirkung'
-    END AS rechtsstatus,
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    'https://geo.so.ch/docs/ch.so.arp.zonenplaene/Zonenplaene_pdf/' || textimweb AS textimweb,
    bemerkungen,
    rechtsvorschrift
 		
 FROM 
    arp_npl.rechtsvorschrften_dokument  
+   
 -- WHERE t_datasetname = '2573' 
 ;   
 
@@ -144,9 +146,8 @@ SELECT
    geschosszahl,
    bezeichnung,
    abkuerzung,
-   verbindlichkeit,
-   bemerkungen,
-   'Gemeinde' AS nachfuehrungseinheit
+   'Nutzungsplanfestlegung' as verbindlichkeit,
+   bemerkungen
 		
 FROM 
    arp_npl.nutzungsplanung_typ_grundnutzung
@@ -165,7 +166,8 @@ SELECT
    CASE rechtsstatus
         WHEN 'laufendeAenderung'
 		      THEN 'AenderungMitVorwirkung'
-    END AS rechtsstatus,
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -232,14 +234,7 @@ SELECT
    bezeichnung,
    abkuerzung,
    verbindlichkeit,
-   bemerkungen,
-   CASE typ_kt 
-        WHEN 'N526_kantonale_Landwirtschafts_und_Schutzzone_Witi'
-              THEN 'Kanton'
-        WHEN 'N610_Perimeter_kantonaler_Nutzungsplan'
-			  THEN 'Kanton'
-	    ELSE 'Gemeinde'
-   END AS nachfuehrungseinheit
+   bemerkungen
 		
 FROM 
    arp_npl.nutzungsplanung_typ_ueberlagernd_flaeche
@@ -334,7 +329,8 @@ SELECT
    CASE ueberlagernd_flaeche.rechtsstatus
         WHEN 'laufendeAenderung'
 		      THEN 'AenderungMitVorwirkung'
-    END AS rechtsstatus,
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    ueberlagernd_flaeche.publiziertab,
    ueberlagernd_flaeche.bemerkungen,
    ueberlagernd_flaeche.erfasser,
@@ -501,8 +497,7 @@ SELECT
    bezeichnung,
    abkuerzung,
    verbindlichkeit,
-   bemerkungen,
-   'Gemeinde' AS nachfuehrungseinheit
+   bemerkungen
 		
 FROM 
    arp_npl.nutzungsplanung_typ_ueberlagernd_linie
@@ -523,7 +518,8 @@ SELECT
    CASE ueberlagernd_linie.rechtsstatus
         WHEN 'laufendeAenderung'
 		      THEN 'AenderungMitVorwirkung'
-    END AS rechtsstatus,   
+		ELSE 'inKraft'	  
+   END AS rechtsstatus, 
    ueberlagernd_linie.publiziertab,
    ueberlagernd_linie.bemerkungen,
    ueberlagernd_linie.erfasser,
@@ -569,8 +565,7 @@ SELECT
    bezeichnung,
    abkuerzung,
    verbindlichkeit,
-   bemerkungen,
-   'Gemeinde' AS nachfuehrungseinheit
+   bemerkungen
 		
 FROM 
    arp_npl.nutzungsplanung_typ_ueberlagernd_punkt
@@ -593,7 +588,8 @@ SELECT
    CASE ueberlagernd_punkt.rechtsstatus
         WHEN 'laufendeAenderung'
 		      THEN 'AenderungMitVorwirkung'
-   END AS rechtsstatus,   
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    ueberlagernd_punkt.publiziertab,
    ueberlagernd_punkt.bemerkungen,
    ueberlagernd_punkt.erfasser,
@@ -636,22 +632,43 @@ WHERE
 INSERT INTO arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_flaechenobjekt
 SELECT 
    t_id,
-   t_basket,
-   t_datasetname,
+-- Für Nachführungseinheit "Kanton" gibt es einen eigenen Basket  
+   CASE typ_kt
+        WHEN 'E560_Nationalstrasse'
+		      THEN 
+			      (SELECT 
+				         t_id
+				  FROM
+				         arp_nutzungsplanung.t_ili2db_basket
+                  WHERE  topic ='SO_Nutzungsplanung_Nachfuehrung_20201005.Erschliessungsplanung' 
+				         AND  
+						 attachmentkey = 'Nachfuehrung_Kanton')
+		WHEN 'E561_Kantonsstrasse'
+		      THEN 
+			      (SELECT 
+				         t_id
+				  FROM
+				         arp_nutzungsplanung.t_ili2db_basket
+                  WHERE  topic ='SO_Nutzungsplanung_Nachfuehrung_20201005.Erschliessungsplanung' 
+				         AND  
+						 attachmentkey = 'Nachfuehrung_Kanton')							 
+        ELSE t_basket						 	
+   END AS t_basket,
+-- Für Nachführungseinheit "Kanton" gibt es einen eigenes Dataset   
+   CASE typ_kt 
+        WHEN 'E560_Nationalstrasse'
+              THEN 'Kanton'
+        WHEN 'E561_Kantonsstrasse'
+			  THEN 'Kanton'
+	    ELSE t_datasetname
+	END AS t_datasetname,
    t_ili_tid,
    typ_kt,
    code_kommunal,
    bezeichnung,
    abkuerzung,
    verbindlichkeit,
-   bemerkungen,
-   CASE typ_kt 
-        WHEN 'E560_Nationalstrasse'
-              THEN 'Kanton'
-        WHEN 'E561_Kantonsstrasse'
-			  THEN 'Kanton'
-	    ELSE 'Gemeinde'
-   END AS nachfuehrungseinheit
+   bemerkungen
 		
 FROM 
    arp_npl.erschlssngsplnung_typ_erschliessung_flaechenobjekt
@@ -661,38 +678,99 @@ FROM
 INSERT INTO arp_nutzungsplanung.erschlssngsplnung_erschliessung_flaechenobjekt
 
 SELECT 
-   t_id,
-   t_basket,
-   t_datasetname,
-   t_ili_tid,
-   geometrie,
-   name_nummer AS geschaefts_nummer,
+   erschliessung_flaechenobjekt.t_id,
+-- Für Nachführungseinheit "Kanton" gibt es einen eigenen Basket  
+   CASE typ_kt
+        WHEN 'E560_Nationalstrasse'
+		      THEN 
+			      (SELECT 
+				         t_id
+				  FROM
+				         arp_nutzungsplanung.t_ili2db_basket
+                  WHERE  topic ='SO_Nutzungsplanung_Nachfuehrung_20201005.Erschliessungsplanung' 
+				         AND  
+						 attachmentkey = 'Nachfuehrung_Kanton')
+		WHEN 'E561_Kantonsstrasse'
+		      THEN 
+			      (SELECT 
+				         t_id
+				  FROM
+				         arp_nutzungsplanung.t_ili2db_basket
+                  WHERE  topic ='SO_Nutzungsplanung_Nachfuehrung_20201005.Erschliessungsplanung' 
+				         AND  
+						 attachmentkey = 'Nachfuehrung_Kanton')							 
+        ELSE erschliessung_flaechenobjekt.t_basket						 	
+   END AS t_basket,
+-- Für Nachführungseinheit "Kanton" gibt es einen eigenes Dataset   
+   CASE typ_kt 
+        WHEN 'E560_Nationalstrasse'
+              THEN 'Kanton'
+        WHEN 'E561_Kantonsstrasse'
+			  THEN 'Kanton'
+	    ELSE erschliessung_flaechenobjekt.t_datasetname
+	END AS t_datasetname,
+   erschliessung_flaechenobjekt.t_ili_tid,
+   erschliessung_flaechenobjekt.geometrie,
+   erschliessung_flaechenobjekt.name_nummer AS geschaefts_nummer,
    CASE rechtsstatus
         WHEN 'laufendeAenderung'
 		      THEN 'AenderungMitVorwirkung'
+		ELSE 'inKraft'	  
    END AS rechtsstatus,
-   publiziertab,
-   bemerkungen,
-   erfasser,
-   datum,
+   erschliessung_flaechenobjekt.publiziertab,
+   erschliessung_flaechenobjekt.bemerkungen,
+   erschliessung_flaechenobjekt.erfasser,
+   erschliessung_flaechenobjekt.datum,
    NULL AS publiziertbis,
-   typ_erschliessung_flaechenobjekt
+   erschliessung_flaechenobjekt.typ_erschliessung_flaechenobjekt
 		
 FROM 
-   arp_npl.erschlssngsplnung_erschliessung_flaechenobjekt
+   arp_npl.erschlssngsplnung_erschliessung_flaechenobjekt AS erschliessung_flaechenobjekt
+   LEFT JOIN arp_npl.erschlssngsplnung_typ_erschliessung_flaechenobjekt AS typ
+   ON typ.t_id = erschliessung_flaechenobjekt.typ_erschliessung_flaechenobjekt 
 -- WHERE t_datasetname = '2573'
 ;   
 
 INSERT INTO arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_flaechenobjekt_dokument
 SELECT 
-   t_id,
-   t_basket,
-   t_datasetname,
-   typ_erschliessung_flaechenobjekt,
-   dokument
+   erschliessung_flaechenobjekt_dokument.t_id,
+-- Für Nachführungseinheit "Kanton" gibt es einen eigenen Basket  
+   CASE typ_kt
+        WHEN 'E560_Nationalstrasse'
+		      THEN 
+			      (SELECT 
+				         t_id
+				  FROM
+				         arp_nutzungsplanung.t_ili2db_basket
+                  WHERE  topic ='SO_Nutzungsplanung_Nachfuehrung_20201005.Erschliessungsplanung' 
+				         AND  
+						 attachmentkey = 'Nachfuehrung_Kanton')
+		WHEN 'E561_Kantonsstrasse'
+		      THEN 
+			      (SELECT 
+				         t_id
+				  FROM
+				         arp_nutzungsplanung.t_ili2db_basket
+                  WHERE  topic ='SO_Nutzungsplanung_Nachfuehrung_20201005.Erschliessungsplanung' 
+				         AND  
+						 attachmentkey = 'Nachfuehrung_Kanton')							 
+        ELSE erschliessung_flaechenobjekt_dokument.t_basket						 	
+   END AS t_basket,
+-- Für Nachführungseinheit "Kanton" gibt es einen eigenes Dataset   
+   CASE typ_kt 
+        WHEN 'E560_Nationalstrasse'
+              THEN 'Kanton'
+        WHEN 'E561_Kantonsstrasse'
+			  THEN 'Kanton'
+	    ELSE erschliessung_flaechenobjekt_dokument.t_datasetname
+	END AS t_datasetname,
+   erschliessung_flaechenobjekt_dokument.typ_erschliessung_flaechenobjekt,
+   erschliessung_flaechenobjekt_dokument.dokument
 		
 FROM 
-   arp_npl.erschlssngsplnung_typ_erschliessung_flaechenobjekt_dokument 
+   arp_npl.erschlssngsplnung_typ_erschliessung_flaechenobjekt_dokument AS erschliessung_flaechenobjekt_dokument
+   LEFT JOIN arp_npl.erschlssngsplnung_typ_erschliessung_flaechenobjekt AS typ
+   ON typ.t_id = erschliessung_flaechenobjekt_dokument.typ_erschliessung_flaechenobjekt 
 -- WHERE t_datasetname = '2573'
 ;   
 -- Erschliessung Linie
@@ -779,22 +857,7 @@ SELECT
    bezeichnung,
    abkuerzung,
    verbindlichkeit,
-   bemerkungen,
-   CASE typ_kt 
-        WHEN 'E711_Baulinie_Strasse_kantonal'
-              THEN 'Kanton'
-        WHEN 'E712_Vorbaulinie_kantonal'
-			  THEN 'Kanton'
-	    WHEN 'E713_Gestaltungsbaulinie_kantonal'
-			  THEN 'Kanton'
-	    WHEN 'E714_Rueckwaertige_Baulinie_kantonal'
-			  THEN 'Kanton'
-	    WHEN 'E715_Baulinie_Infrastruktur_kantonal'
-			  THEN 'Kanton'
-	    WHEN 'E719_weitere_nationale_und_kantonale_Baulinien'
-			  THEN 'Kanton'
-	    ELSE 'Gemeinde'
-	END AS nachfuehrungseinheit
+   bemerkungen
 		
 FROM 
    arp_npl.erschlssngsplnung_typ_erschliessung_linienobjekt
@@ -885,10 +948,11 @@ SELECT
    erschliessung_linienobjekt.t_ili_tid,
    erschliessung_linienobjekt.geometrie,
    erschliessung_linienobjekt.name_nummer AS geschaefts_nummer,
-   CASE erschliessung_linienobjekt.rechtsstatus
+   CASE rechtsstatus
         WHEN 'laufendeAenderung'
 		      THEN 'AenderungMitVorwirkung'
-    END AS rechtsstatus,
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    erschliessung_linienobjekt.publiziertab,
    erschliessung_linienobjekt.bemerkungen,
    erschliessung_linienobjekt.erfasser,
@@ -1006,8 +1070,7 @@ SELECT
    bezeichnung,
    abkuerzung,
    verbindlichkeit,
-   bemerkungen,
-   '' AS nachfuehrungseinheit
+   bemerkungen
 		
 FROM 
    arp_npl.erschlssngsplnung_typ_erschliessung_punktobjekt
@@ -1026,7 +1089,8 @@ SELECT
    CASE rechtsstatus
         WHEN 'laufendeAenderung'
 		      THEN 'AenderungMitVorwirkung'
-    END AS rechtsstatus,
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -1062,8 +1126,7 @@ SELECT
    bezeichnung,
    abkuerzung,
    verbindlichkeit,
-   bemerkungen,
-   'Gemeinde' AS nachfuehrungseinheit
+   bemerkungen
 		
 FROM 
    arp_npl.nutzungsplanung_typ_ueberlagernd_flaeche
@@ -1132,8 +1195,9 @@ SELECT
    ueberlagernd_flaeche_dokument.t_id,
    ueberlagernd_flaeche_dokument.t_basket,
    ueberlagernd_flaeche_dokument.t_datasetname,
-   ueberlagernd_flaeche_dokument.typ_ueberlagernd_flaeche AS typ_empfindlichkeitsstufen,
-   ueberlagernd_flaeche_dokument.dokument
+   ueberlagernd_flaeche_dokument.dokument,   
+   ueberlagernd_flaeche_dokument.typ_ueberlagernd_flaeche AS typ_empfindlichkeitsstufen
+
 		
 FROM 
    arp_npl.nutzungsplanung_typ_ueberlagernd_flaeche_dokument AS ueberlagernd_flaeche_dokument
@@ -1156,3 +1220,80 @@ WHERE
    typ.typ_kt= 'N686_keine_Empfindlichkeitsstufe'   
    -- AND t_datasetname = '2573'
 ;
+
+--Datasetname "Kanton" und der entsprechenden Basket bei Dokumente aktuallisieren
+--nutzungsplanung_typ_ueberlagernd_flaeche_dokument 
+UPDATE arp_nutzungsplanung.rechtsvorschrften_dokument
+SET 
+   t_datasetname =ueberlagernd_flaeche_dokument.t_datasetname,
+   t_basket=basket.t_id     
+FROM
+   arp_nutzungsplanung.nutzungsplanung_typ_ueberlagernd_flaeche_dokument AS ueberlagernd_flaeche_dokument,
+   arp_nutzungsplanung.t_ili2db_basket AS basket,
+   arp_nutzungsplanung.t_ili2db_dataset AS dataset	
+WHERE 
+   ueberlagernd_flaeche_dokument.dokument=arp_nutzungsplanung.rechtsvorschrften_dokument.t_id 
+   AND 
+   ueberlagernd_flaeche_dokument.t_datasetname=dataset.datasetname
+   AND
+   basket.topic = 'SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften'
+   AND
+   dataset.t_id=basket.dataset   
+;
+--erschlssngsplnung_typ_erschliessung_flaechenobjekt_dokument
+UPDATE arp_nutzungsplanung.rechtsvorschrften_dokument
+SET 
+   t_datasetname =erschliessung_flaechenobjekt_dokument.t_datasetname,
+   t_basket=basket.t_id        
+FROM
+   arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_flaechenobjekt_dokument AS erschliessung_flaechenobjekt_dokument,
+   arp_nutzungsplanung.t_ili2db_basket AS basket,
+   arp_nutzungsplanung.t_ili2db_dataset AS dataset	
+WHERE 
+   erschliessung_flaechenobjekt_dokument.dokument=arp_nutzungsplanung.rechtsvorschrften_dokument.t_id
+   AND 
+   erschliessung_flaechenobjekt_dokument.t_datasetname=dataset.datasetname
+   AND
+   basket.topic = 'SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften'
+   AND
+   dataset.t_id=basket.dataset  
+;  
+--erschlssngsplnung_typ_erschliessung_linienobjekt_dokument
+UPDATE arp_nutzungsplanung.rechtsvorschrften_dokument
+SET 
+    t_datasetname =erschliessung_linienobjekt_dokument.t_datasetname,
+    t_basket=basket.t_id      
+FROM
+   arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_linienobjekt_dokument AS erschliessung_linienobjekt_dokument,
+   arp_nutzungsplanung.t_ili2db_basket AS basket,
+   arp_nutzungsplanung.t_ili2db_dataset AS dataset	
+WHERE 
+   erschliessung_linienobjekt_dokument.dokument=arp_nutzungsplanung.rechtsvorschrften_dokument.t_id
+   AND 
+   erschliessung_linienobjekt_dokument.t_datasetname=dataset.datasetname
+   AND
+   basket.topic = 'SO_Nutzungsplanung_Nachfuehrung_20201005.Rechtsvorschriften'
+   AND
+   dataset.t_id=basket.dataset 
+;
+ 
+-- erschliessung_flaechenobjekt_dokument aktualliseren für Datasetname "Kanton" und der entsprechenden Basket z.B. Trottoir usw. aus kantonalem Erschliessungsplan
+--UPDATE arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_flaechenobjekt_dokument
+-- Achtung bei Oensingen ist das nicht sinnvoll, überhaupt sinnvoll?
+--SET 
+--   t_datasetname =dokument.t_datasetname,
+--   t_basket=dokument.t_basket      
+--FROM
+--    arp_nutzungsplanung.rechtsvorschrften_dokument AS dokument
+--WHERE 
+--    dokument.t_id=arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_flaechenobjekt_dokument.dokument
+-- erschliessung_flaechenobjekt_dokument aktualliseren für Datasetname "Kanton" und der entsprechenden Basket z.B. Trottoir usw. aus kantonalem Erschliessungsplan
+--UPDATE arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_flaechenobjekt
+--SET 
+--    t_datasetname =erschliessung_flaechenobjekt_dokument.t_datasetname,
+--    t_basket=erschliessung_flaechenobjekt_dokument.t_basket      
+--FROM
+--    arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_flaechenobjekt_dokument AS erschliessung_flaechenobjekt_dokument
+--WHERE 
+--    erschliessung_flaechenobjekt_dokument.typ_erschliessung_flaechenobjekt=arp_nutzungsplanung.erschlssngsplnung_typ_erschliessung_flaechenobjekt.t_id
+	

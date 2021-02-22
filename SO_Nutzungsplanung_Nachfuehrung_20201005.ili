@@ -6,7 +6,6 @@ INTERLIS 2.3;
  *  2020-10-05 | al  | Auf der Basis des Modell SO_Nutzungsplanung_20171118 wird ein
  *             |     | Nachführungsmodell erstellt. Änderungen:
  *             |     | - Grundnutzung neu Surface 
- *             |     | - neues Attribut "Nachführungseinheit"
  *             |     | - neue Werte bei Rechtstatus
  *             |     | - Name_Nummer heisst neu "Geschaefts_Nummer"
  *             |     | - neues Attribut "publiziertBis"
@@ -27,6 +26,8 @@ VERSION "2020-10-05"  =
   IMPORTS CHAdminCodes_V1,GeometryCHLV95_V1;
 
   DOMAIN
+
+    Bemerkungen_Typ = MTEXT*240;
 
     Einzelflaeche
     EXTENDS GeometryCHLV95_V1.Surface = SURFACE WITH (ARCS,STRAIGHTS) VERTEX GeometryCHLV95_V1.Coord2 WITHOUT OVERLAPS>0.001;
@@ -51,18 +52,6 @@ VERSION "2020-10-05"  =
        */
       Nutzungsplanfestlegung
     );
-
-    /** In Gon
-     */
-    Rotation = 0 .. 399;
-
-    Schriftgroesse = (
-      klein,
-      mittel,
-      gross
-    );
-
-    Bemerkungen_Typ = MTEXT*240;
 
   TOPIC Rechtsvorschriften =
     OID AS INTERLIS.UUIDOID;
@@ -185,10 +174,6 @@ VERSION "2020-10-05"  =
       /** Erläuternder Text zum Typ
        */
       Bemerkungen : SO_Nutzungsplanung_Nachfuehrung_20201005.Bemerkungen_Typ;
-      Nachfuehrungseinheit : (
-        Kanton,
-        Gemeinde
-      );
     END Typ;
 
     DOMAIN
@@ -206,13 +191,6 @@ VERSION "2020-10-05"  =
         N610_Perimeter_kantonaler_Nutzungsplan,
         N611_Perimeter_kommunaler_Gestaltungsplan,
         N620_Perimeter_Gestaltungsplanpflicht,
-        N680_Empfindlichkeitsstufe_I,
-        N681_Empfindlichkeitsstufe_II,
-        N682_Empfindlichkeitsstufe_II_aufgestuft,
-        N683_Empfindlichkeitsstufe_III,
-        N684_Empfindlichkeitsstufe_III_aufgestuft,
-        N685_Empfindlichkeitsstufe_IV,
-        N686_keine_Empfindlichkeitsstufe,
         N691_kommunales_Vorranggebiet_Natur_und_Landschaft,
         N692_Planungszone,
         N699_weitere_flaechenbezogene_Festlegungen_NP,
@@ -306,7 +284,7 @@ VERSION "2020-10-05"  =
       Datum : MANDATORY INTERLIS.XMLDate;
       /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
        */
-      publiziertBis : TEXT*20;
+      publiziertBis : INTERLIS.XMLDate;
     END Grundnutzung;
 
     CLASS Typ_Ueberlagernd_Linie
@@ -393,7 +371,7 @@ VERSION "2020-10-05"  =
       Datum : MANDATORY INTERLIS.XMLDate;
       /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
        */
-      publiziertBis : TEXT*20;
+      publiziertBis : INTERLIS.XMLDate;
     END Ueberlagernd_Linie;
 
     /** Ein Typ_Ueberlagernd_Flaeche kann mehrere überlagernde Geometrien haben.
@@ -432,7 +410,7 @@ VERSION "2020-10-05"  =
       Datum : MANDATORY INTERLIS.XMLDate;
       /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
        */
-      publiziertBis : TEXT*20;
+      publiziertBis : INTERLIS.XMLDate;
     END Ueberlagernd_Punkt;
 
     /** Ein Typ_Ueberlagernd_Linie kann mehrere überlagernde Geometrien haben.
@@ -551,7 +529,7 @@ VERSION "2020-10-05"  =
       Datum : MANDATORY INTERLIS.XMLDate;
       /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
        */
-      publiziertBis : TEXT*20;
+      publiziertBis : INTERLIS.XMLDate;
     END Erschliessung_Linienobjekt;
 
     /** Siehe in der Arbeitshilfe
@@ -588,7 +566,7 @@ VERSION "2020-10-05"  =
       Datum : MANDATORY INTERLIS.XMLDate;
       /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
        */
-      publiziertBis : TEXT*20;
+      publiziertBis : INTERLIS.XMLDate;
     END Erschliessung_Flaechenobjekt;
 
     CLASS Erschliessung_Punktobjekt =
@@ -611,7 +589,7 @@ VERSION "2020-10-05"  =
       Datum : MANDATORY INTERLIS.XMLDate;
       /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
        */
-      publiziertBis : TEXT*20;
+      publiziertBis : INTERLIS.XMLDate;
     END Erschliessung_Punktobjekt;
 
     /** Typ_Erschliessung_Linienobjekt kann mehrere Erschliessung-Geometrien haben
@@ -676,7 +654,7 @@ VERSION "2020-10-05"  =
       Datum : MANDATORY INTERLIS.XMLDate;
       /** Datum, an/ab dem dieses Objekt nicht mehr rechtskräftig ist.
        */
-      publiziertBis : TEXT*20;
+      publiziertBis : INTERLIS.XMLDate;
     END Empfindlichkeitsstufen;
 
     CLASS Typ_Empfindlichkeitsstufen

@@ -39,7 +39,13 @@ SELECT
    kanton,
    gemeinde,
    publiziertab,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
 -- eiegntlich nciht nötig aber GRETL-Job muss noch angepasst werden 
    replace (textimweb, 'https://geo.so.ch/docs/ch.so.arp.zonenplaene/Zonenplaene_pdf/', '') AS textimweb,
    bemerkungen,
@@ -80,7 +86,13 @@ SELECT
    t_ili_tid,
    geometrie,
    geschaefts_nummer AS name_nummer,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -131,7 +143,13 @@ SELECT
    t_ili_tid,
    geometrie,
    geschaefts_nummer AS name_nummer,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -182,7 +200,13 @@ SELECT
    t_ili_tid,
    geometrie,
    geschaefts_nummer AS name_nummer,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -232,7 +256,13 @@ SELECT
    t_ili_tid,
    geometrie,
    geschaefts_nummer AS name_nummer,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -283,7 +313,13 @@ SELECT
    t_ili_tid,
    geometrie,
    geschaefts_nummer AS name_nummer,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -333,7 +369,13 @@ SELECT
    t_ili_tid,
    geometrie,
    geschaefts_nummer AS name_nummer,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -382,7 +424,13 @@ SELECT
    t_ili_tid,
    geometrie,
    geschaefts_nummer AS name_nummer,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,
@@ -431,7 +479,13 @@ SELECT
    t_ili_tid,
    geometrie,
    geschaefts_nummer AS name_nummer,
-   rechtsstatus,
+   CASE rechtsstatus
+        WHEN 'AenderungMitVorwirkung'
+		      THEN 'laufendeAenderung'
+		WHEN 'AenderungOhneVorwirkung'  
+		      THEN 'laufendeAenderung'
+		ELSE 'inKraft'	  
+   END AS rechtsstatus,
    publiziertab,
    bemerkungen,
    erfasser,

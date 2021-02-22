@@ -1,0 +1,248 @@
+Info: ilivalidator-1.11.1-3a0d49f7bb50f812cf89f80d52830ffd69bc1700
+Info: ili2c-5.0.2-20190906
+Info: iox-ili-1.20.13-0e35e7a59192f24b5deaf800127552d05ea64efb
+Info: maxMemory 253440 KB
+Info: dataFile <C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung\2407.xtf>
+Info: ilidirs <%ITF_DIR;http://models.interlis.ch/;%JAR_DIR/ilimodels>
+Info: lookup model <GeometryCHLV03_V1> in repository <C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung/>
+Info: lookup model <GeometryCHLV03_V1> in repository <http://models.interlis.ch/>
+Warning: TID=1001: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=1002: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=1003: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=1004: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=1005: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=1006: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=1007: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=1008: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Info: lookup model <GeometryCHLV03_V1> in repository <C:\Users\bjsvwlue\Documents\ilivalidator-1.11.1/ilimodels/>
+Warning: Folder C:\Users\bjsvwlue\Documents\ilivalidator-1.11.1\ilimodels doesn't exist; ignored
+Info: lookup model <GeometryCHLV03_V1> in repository <http://models.geo.admin.ch/>
+Warning: TID=100501: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100502: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100503: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100504: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100505: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100506: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100507: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100508: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100509: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100510: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100511: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100512: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100513: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100514: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100515: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100516: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100517: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100518: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100519: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100520: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100521: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Warning: TID=100522: ignored; unknown class <IliRepository20.RepositoryIndex.ModelMetadata>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <C:\Users\bjsvwlue\Documents\ilivalidator-1.11.1/ilimodels/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.kkgeo.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.geo.llv.li/>
+Warning: model Waldreservate_LI_V1: duplicate version without precursor; version 2019-07-04 ignored
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <https://repositorio.proadmintierra.info/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.geo.ai.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <https://models.kkgeo.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <https://models.geo.ar.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.geo.be.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.geo.bl.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.geo.gl.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <https://models.geo.gr.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <https://models.geo.lu.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <https://models.geo.sg.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <http://models.geo.sh.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <CoordSys> 2.3 in repository <C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung/>
+Info: lookup model <CoordSys> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <C:\Users\bjsvwlue\Documents\ilivalidator-1.11.1/ilimodels/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <Units> 2.3 in repository <C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung/>
+Info: lookup model <Units> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <C:\Users\bjsvwlue\Documents\ilivalidator-1.11.1/ilimodels/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: ilifile <C:\Users\bjsvwlue\.ilicache\models.interlis.ch\refhb23\Units-20120220.ili>
+Info: ilifile <C:\Users\bjsvwlue\.ilicache\models.geo.admin.ch\CH\CHBase_Part2_LOCALISATION_V1.ili>
+Info: ilifile <C:\Users\bjsvwlue\.ilicache\models.interlis.ch\refhb23\CoordSys-20151124.ili>
+Info: ilifile <C:\Users\bjsvwlue\.ilicache\models.geo.admin.ch\CH\CHBase_Part4_ADMINISTRATIVEUNITS_V1.ili>
+Info: ilifile <C:\Users\bjsvwlue\.ilicache\models.geo.admin.ch\CH\CHBase_Part1_GEOMETRY_V1.ili>
+Info: ilifile <C:\Users\bjsvwlue\.ilicache\geo.so.ch\models\ARP\SO_Nutzungsplanung_20171118.ili>
+Info: validate data...
+Info: assume unknown external objects
+Info: first validation pass...
+Error: line 1715: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 4e3ab5e9-30eb-4918-a76e-6bd41cb2d18a: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-190-P.pdf> in attribute TextImWeb
+Error: line 1716: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid aeabdd1d-2f77-4edd-8b77-092561863067: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-188-P.pdf> in attribute TextImWeb
+Error: line 1717: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 43ae1afd-4823-4673-a1bd-1702459f2816: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-188-S.pdf> in attribute TextImWeb
+Error: line 1718: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid ab4560c8-5bb0-46d3-b0bf-0653e30d365c: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-190-S.pdf> in attribute TextImWeb
+Error: line 1719: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 1a6092ad-a523-4317-b19b-6cf50667b431: invalid format of INTERLIS.URI value <80-Oensingen/Reglemente/80-ZR.pdf> in attribute TextImWeb
+Error: line 1720: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 7bc909d2-022e-4ea9-948e-7bc4cfc8c215: invalid format of INTERLIS.URI value <80-Oensingen/Reglemente/80-BR.pdf> in attribute TextImWeb
+Error: line 1721: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 94339341-7490-42bc-b6e8-2c8f8d41b90d: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-181-P.pdf> in attribute TextImWeb
+Error: line 1722: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid c272ea15-bf1a-4ec4-8271-6f10eb833794: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-146-S.pdf> in attribute TextImWeb
+Error: line 1723: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 54b58fd1-6af9-4e22-ab54-72a3297dcbd8: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-146-E.pdf> in attribute TextImWeb
+Error: line 1724: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid ac8432ad-0d9d-413c-b9c1-61876a6dec1d: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-146-P.pdf> in attribute TextImWeb
+Error: line 1725: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 75eb4d1a-b458-4b2a-97ff-f7b576ee3d8a: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-63-S.pdf> in attribute TextImWeb
+Error: line 1726: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 0413d71b-cd51-4a02-8b82-df9d6c4a2ee7: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-63-E.pdf> in attribute TextImWeb
+Error: line 1727: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 6f1c9de8-d309-462d-98ef-e23ac954707f: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-63-P.pdf> in attribute TextImWeb
+Error: line 1728: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 34aa27c5-2608-47c8-8ae9-cfdcde155409: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-66-S.pdf> in attribute TextImWeb
+Error: line 1729: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 8620e45c-819e-4af3-a50b-585aa4c5d39a: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-66-E.pdf> in attribute TextImWeb
+Error: line 1730: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid f5f73a69-dac0-4ea2-bdee-2a5aed99ba15: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-66-P.pdf> in attribute TextImWeb
+Error: line 1731: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid c37c3e1d-5085-4f55-bac9-7d39aaddd98c: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-129_130-S.pdf> in attribute TextImWeb
+Error: line 1732: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d9f5e1c5-0864-479c-94c0-3bc2a4fe7d97: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-129_130-E.pdf> in attribute TextImWeb
+Error: line 1733: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d47ecb79-c01f-46b6-b126-e0880ddaa766: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-130-P.pdf> in attribute TextImWeb
+Error: line 1734: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid daedc5a9-5f38-4d40-a901-b791a58090b6: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-70-E.pdf> in attribute TextImWeb
+Error: line 1735: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 7e0e2535-7559-45e2-b0e7-b9f33e528130: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-72-P.pdf> in attribute TextImWeb
+Error: line 1736: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d4b4dcbe-7868-4e89-8427-c1b517976fc0: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-72-S.pdf> in attribute TextImWeb
+Error: line 1737: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 5eb7e34a-efd9-468b-95f5-71948a8fd1d0: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-73-E.pdf> in attribute TextImWeb
+Error: line 1738: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d498b17c-c2ae-4222-93d3-b9cfb25658b6: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-73-P.pdf> in attribute TextImWeb
+Error: line 1739: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid bd0810cf-3e66-4d8e-9627-bb2c9a3d0eab: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-73-S.pdf> in attribute TextImWeb
+Error: line 1740: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 56dd60cd-d35e-440d-b5fa-15cc106cb846: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-80-E.pdf> in attribute TextImWeb
+Error: line 1741: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid b2bfce73-ed8a-444e-b707-95ff31e245b6: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-80-P.pdf> in attribute TextImWeb
+Error: line 1742: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 2319ace1-0cd8-43ac-8909-aa6b762bd2cc: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-80-S.pdf> in attribute TextImWeb
+Error: line 1743: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 7d6fc3fa-f938-42d5-b285-d8b26e7e48c5: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-84-E.pdf> in attribute TextImWeb
+Error: line 1744: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 2208cfe5-e58b-45e7-a73d-efe5e806ff2c: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-84-P.pdf> in attribute TextImWeb
+Error: line 1745: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 3eec746c-fa74-4e2b-ab59-eb82baa7b8f7: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-100-E.pdf> in attribute TextImWeb
+Error: line 1746: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid f93af5ed-77b8-44a4-af71-3e108fa367ee: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-100-P.pdf> in attribute TextImWeb
+Error: line 1747: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 9f92cc5a-f2b5-41d9-a801-b60221c1d2a0: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-100-S.pdf> in attribute TextImWeb
+Error: line 1748: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid b501570c-160b-4393-8648-a3c3349fa2e5: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-103-E.pdf> in attribute TextImWeb
+Error: line 1749: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 0a8e4120-b83d-445e-a337-98c46587d710: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-103-P.pdf> in attribute TextImWeb
+Error: line 1750: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid ca11419d-c78a-4da1-ae06-e2610513fdf4: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-102-E.pdf> in attribute TextImWeb
+Error: line 1751: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid cadd258d-54fa-4839-8005-cc6b28d31784: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-102-P.pdf> in attribute TextImWeb
+Error: line 1752: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d383f674-c721-4a17-be91-e8710b148a71: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-102-S.pdf> in attribute TextImWeb
+Error: line 1753: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 6e3ee730-fff0-4f4d-a176-8391de104e73: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-110-E.pdf> in attribute TextImWeb
+Error: line 1754: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid b07a249e-63f4-4d2e-9b3d-b60b7f6ba163: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-110-P.pdf> in attribute TextImWeb
+Error: line 1755: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 625a7359-2f68-4434-b34f-f78f8bceba07: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-110-S.pdf> in attribute TextImWeb
+Error: line 1756: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 0ac90654-a6ce-4fd7-b1ae-a388ddb648e2: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-144-145-E.pdf> in attribute TextImWeb
+Error: line 1757: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 0d17b553-c5e7-4bf5-a16b-4c8c4ee3c6c1: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-145-P.pdf> in attribute TextImWeb
+Error: line 1758: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 723f5ba2-aca8-4c04-9a63-53a75f438345: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-122-E.pdf> in attribute TextImWeb
+Error: line 1759: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 648bbefb-6db4-44ef-9a7a-da48b916a2be: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-122-P.pdf> in attribute TextImWeb
+Error: line 1760: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 27c4c012-f93e-4e5e-8dbc-233182f75ba1: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-122-S.pdf> in attribute TextImWeb
+Error: line 1761: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 11174ba1-52b1-4f4f-a6bb-b0e578d2152a: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-168-E.pdf> in attribute TextImWeb
+Error: line 1762: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 2bd918c2-b7db-4af1-bd31-99b3ebd97142: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-168-P.pdf> in attribute TextImWeb
+Error: line 1763: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 01927d36-adcf-4864-a235-421dc5a255c8: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-168-S.pdf> in attribute TextImWeb
+Error: line 1764: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d84c9c01-8c6a-449c-9260-9f93dba8b54e: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-163-P.pdf> in attribute TextImWeb
+Error: line 1765: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 016fe851-0670-447a-a5b0-aeeba935260b: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-163-S.pdf> in attribute TextImWeb
+Error: line 1766: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid b0ca0496-0b00-4b2b-9c24-023f9cfad607: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-163-E.pdf> in attribute TextImWeb
+Error: line 1767: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 98000fa8-200a-4616-a261-f0b15df0858d: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-127-E.pdf> in attribute TextImWeb
+Error: line 1768: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 015f0ed2-0ee8-4b4f-916c-ff0c84f71ab8: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-127-S.pdf> in attribute TextImWeb
+Error: line 1769: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 51df20ae-e786-4ee4-abb8-06861cc13f78: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-127-P.pdf> in attribute TextImWeb
+Error: line 1770: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 05d96986-5fa6-4729-8d4f-02ebf8a92b2c: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-128-P.pdf> in attribute TextImWeb
+Error: line 1771: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d92fe69e-f19f-43a4-89e7-0dac5bc39de6: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-128-E.pdf> in attribute TextImWeb
+Error: line 1772: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 23a50223-c933-4dbb-a8f0-a4a627a8d5d2: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-128-S.pdf> in attribute TextImWeb
+Error: line 1773: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 076b6521-8797-4d78-b187-dfc3bcfc91b3: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-150-P.pdf> in attribute TextImWeb
+Error: line 1774: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 9cd3c2ce-28c8-4fdc-8399-12d3b614038c: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-150_151-E.pdf> in attribute TextImWeb
+Error: line 1775: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 0211dde3-032d-4be8-a1fb-07e9e2334102: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-150_151-S.pdf> in attribute TextImWeb
+Error: line 1776: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 6b416e90-aa57-4a7d-952a-7860cbbbe9b1: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-151-P.pdf> in attribute TextImWeb
+Error: line 1777: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid e4fedf2b-ed01-4ee1-b7a9-e0e2aa316bd4: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-150_151-E.pdf> in attribute TextImWeb
+Error: line 1778: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 6d772ccc-86e2-41f1-aabb-0b2c6bfff32f: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-150_151-S.pdf> in attribute TextImWeb
+Error: line 1779: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid a9c8fd11-e871-4b2e-a5dc-2d80338b6157: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-160-P.pdf> in attribute TextImWeb
+Error: line 1780: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid e7ad7101-27cc-42ee-b8fb-16eefc26b9d9: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-160-E.pdf> in attribute TextImWeb
+Error: line 1781: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 88ee90c3-4014-4e98-a0bd-439d9cd79d2a: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-170_171-E.pdf> in attribute TextImWeb
+Error: line 1782: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d9d91d68-e52d-46ef-81a1-74fba87c703c: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-171-S.pdf> in attribute TextImWeb
+Error: line 1783: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 77daefc0-3aa4-4b41-846f-1b4b8f1eb69d: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-171-P.pdf> in attribute TextImWeb
+Error: line 1784: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid bdcf4ac2-938e-4a7e-8a38-d6f87efb37a2: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-85-E.pdf> in attribute TextImWeb
+Error: line 1785: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 1685168e-452d-42d3-b855-acb2c315ad53: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-85-P.pdf> in attribute TextImWeb
+Error: line 1786: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 0400404a-47be-49d4-a311-4e515142a0b3: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-85-S.pdf> in attribute TextImWeb
+Error: line 1787: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid cdb5df62-9a98-4ff1-b852-1b3ecdda2348: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-178-E.pdf> in attribute TextImWeb
+Error: line 1788: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid ea53bddc-0b06-47f5-989f-23b43fa6d3f4: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-178-P.pdf> in attribute TextImWeb
+Error: line 1789: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 4358f22a-32e7-4b43-bb74-8e0995ab8387: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-178-S.pdf> in attribute TextImWeb
+Error: line 1790: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 2d86f892-a35c-4eb8-97be-57ec985481f1: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-109-E.pdf> in attribute TextImWeb
+Error: line 1791: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 88b6c66f-98eb-4caa-aa9d-c6d39ac2ef3e: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-109-P.pdf> in attribute TextImWeb
+Error: line 1792: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 911a4c59-df17-43b1-a93a-ed174083c365: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-109-S.pdf> in attribute TextImWeb
+Error: line 1793: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid b79d2aec-51aa-4d55-88b8-0bd4d7a3e3d9: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-164-P.pdf> in attribute TextImWeb
+Error: line 1794: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 84fa7d86-9188-4021-80d2-ef0e5227efe3: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-174-P.pdf> in attribute TextImWeb
+Error: line 1795: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 6f42bd19-496d-490b-b0b4-cf630a58ed07: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-173-P.pdf> in attribute TextImWeb
+Error: line 1796: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 110f5362-699f-4fa4-9f05-bdeb4c651086: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-186-P.pdf> in attribute TextImWeb
+Error: line 1797: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 026f3dff-6e07-41a6-8677-6f26a24588a0: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-185-P.pdf> in attribute TextImWeb
+Error: line 1798: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 514f3d0c-db4e-46a9-80bc-9ba0e5b6b870: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-103-S.pdf> in attribute TextImWeb
+Error: line 1799: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid a1a24e3d-b79e-4d27-8c20-7b0a552e4cd1: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-189-S.pdf> in attribute TextImWeb
+Error: line 1800: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 5f5c8841-2fba-42bf-b0f5-199b44abcc6f: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-189-P.pdf> in attribute TextImWeb
+Error: line 1801: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 8b76182f-e2ab-41e4-807f-e6fc3320eae2: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-188-E.pdf> in attribute TextImWeb
+Error: line 1802: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid ee323c63-b06c-49b2-bbd0-334631351c7c: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-187-E.pdf> in attribute TextImWeb
+Error: line 1803: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid d9ac019d-0003-4fac-a5e7-1de72b7598ec: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-190-E.pdf> in attribute TextImWeb
+Error: line 1804: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 99d08f50-c7d8-45d4-9308-4569b3634f47: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-189-E.pdf> in attribute TextImWeb
+Error: line 1805: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid fb6d904f-87d5-48e8-bf56-2e01746ca575: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-187-P.pdf> in attribute TextImWeb
+Info: second validation pass...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Rechtsvorschriften.HinweisWeitereDokumente.Ursprung...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Rechtsvorschriften.HinweisWeitereDokumente.Hinweis...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument.Typ_Ueberlagernd_Flaeche...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument.Typ_Grundnutzung...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument.Typ_Erschliessung_Flaechenobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument.Typ_Ueberlagernd_Punkt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Linie_Dokument.Typ_Ueberlagernd_Linie...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument.Typ_Erschliessung_Linienobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument.Typ_Erschliessung_Punktobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Grundnutzung.Typ_Grundnutzung...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Grundnutzung.Typ_Grundnutzung...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Grundnutzung_Grundnutzung_Pos.Grundnutzung_Pos...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument.Dokument...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Grundnutzung.Grundnutzung...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument.Typ_Grundnutzung...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument.Dokument...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Flaeche.Typ_Ueberlagernd_Flaeche...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Flaeche.Typ_Ueberlagernd_Flaeche...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Flaeche_Flaeche_Pos.Ueberlagernd_Flaeche_Pos...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Punkt.Typ_Ueberlagernd_Punkt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Punkt_Punkt_Pos.Ueberlagernd_Punkt_Pos...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Punkt.Typ_Ueberlagernd_Punkt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Flaeche.Ueberlagernd_Flaeche...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument.Dokument...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument.Typ_Ueberlagernd_Flaeche...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument.Dokument...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Punkt.Ueberlagernd_Punkt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument.Dokument...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument.Typ_Ueberlagernd_Punkt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument.Dokument...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Flaeche.Typ_Erschliessung_Flaechenobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Flaechenobjekt_Flaeche_Pos.Erschliessung_Flaechenobjekt_Pos...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Flaeche.Typ_Erschliessung_Flaechenobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Linie.Typ_Erschliessung_Linienobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Linie.Typ_Erschliessung_Linienobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Linienobjekt_Linie_Pos.Erschliessung_Linienobjekt_Pos...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Punkt.Typ_Erschliessung_Punktobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Punktobjekt_Punkt_Pos.Erschliessung_Punktobjekt_Pos...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Punkt.Typ_Erschliessung_Punktobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Flaeche.Erschliessung_Flaechenobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument.Dokument...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument.Typ_Erschliessung_Flaechenobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument.Dokument...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument.Dokument...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Linie.Erschliessung_Linienobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument.Typ_Erschliessung_Linienobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument.Dokument...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Punkt.Erschliessung_Punktobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument.Dokument...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument.Typ_Erschliessung_Punktobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument.Dokument...
+Info: validate AREA SO_Nutzungsplanung_20171118.Nutzungsplanung.Grundnutzung.Geometrie...
+Info: C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung\2407.xtf: SO_Nutzungsplanung_20171118.Erschliessungsplanung BID=16447
+Info:     188 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Flaechenobjekt
+Info:     341 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Linienobjekt
+Info:      19 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Punktobjekt
+Info:       7 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt
+Info:       7 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument
+Info:       6 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt
+Info:       6 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument
+Info:       4 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt
+Info:       3 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument
+Info: C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung\2407.xtf: SO_Nutzungsplanung_20171118.Nutzungsplanung BID=14812
+Info:     565 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Grundnutzung
+Info:      31 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung
+Info:      93 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument
+Info:      34 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche
+Info:      98 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument
+Info:       1 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt
+Info:       3 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument
+Info:      71 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Flaeche
+Info:     229 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Punkt
+Info: C:\Users\bjsvwlue\Documents\arp-npl-nachfuehrung\Testdaten\Export_Nachfuehrung\2407.xtf: SO_Nutzungsplanung_20171118.Rechtsvorschriften BID=14726
+Info:      91 objects in CLASS SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument
+Info: ...validation failed

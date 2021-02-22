@@ -1,0 +1,513 @@
+Info: ilivalidator-1.11.9-7dab04f1037b40b6219ae2e584b3fcc1bc10726d
+Info: ili2c-5.1.5-35f2a1fe63ea46830bc886ae50a3a818125c8eb9
+Info: iox-ili-1.21.4-3757f7907f90ae2bef2be7c97d50d11770fc5f1f
+Info: User <?>
+Info: Start date 2021-02-16 09:32
+Info: maxMemory 1623424 KB
+Info: dataFile </tmp/ilivalidator_7219220222154217022/2407_v2.xtf>
+Info: configFile </tmp/ilivalidator_7219220222154217022/so_nutzungsplanung_20171118.toml>
+Info: pluginFolder </tmp/ilivalidator_7219220222154217022>
+Info: modeldir <%ITF_DIR;http://models.interlis.ch/;%JAR_DIR/ilimodels>
+Info: lookup model <GeometryCHLV03_V1> 2.3 in repository </tmp/ilivalidator_7219220222154217022/>
+Info: lookup model <GeometryCHLV03_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <GeometryCHLV03_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118> 2.3 in repository </tmp/ilivalidator_7219220222154217022/>
+Info: lookup model <CoordSys> 2.3 in repository </tmp/ilivalidator_7219220222154217022/>
+Info: lookup model <CoordSys> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository </tmp/ilivalidator_7219220222154217022/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <InternationalCodes_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <Units> 2.3 in repository </tmp/ilivalidator_7219220222154217022/>
+Info: lookup model <Units> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository </tmp/ilivalidator_7219220222154217022/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <CHAdminCodes_V1> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository </tmp/ilivalidator_7219220222154217022/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.kkgeo.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.geo.llv.li/>
+Warning: model Waldreservate_LI_V1: duplicate version without precursor; version 2019-07-04 ignored
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <https://repositorio.proadmintierra.info/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.geo.ai.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <https://models.kkgeo.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <https://models.geo.ar.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.geo.be.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.geo.bl.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.geo.gl.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <https://models.geo.gr.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <https://models.geo.lu.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <https://models.geo.sg.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <http://models.geo.sh.ch/>
+Info: lookup model <SO_Nutzungsplanung_20171118_Validierung_20190129> 2.3 in repository <https://geo.so.ch/models/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository </tmp/ilivalidator_7219220222154217022/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.interlis.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.geo.admin.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.kkgeo.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.geo.llv.li/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <https://repositorio.proadmintierra.info/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.geo.ai.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <https://models.kkgeo.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <https://models.geo.ar.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.geo.be.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.geo.bl.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.geo.gl.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <https://models.geo.gr.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <https://models.geo.lu.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <https://models.geo.sg.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <http://models.geo.sh.ch/>
+Info: lookup model <SO_FunctionsExt> 2.3 in repository <https://geo.so.ch/models/>
+Info: ilifile <?/.ilicache/models.interlis.ch/refhb23/Units-20120220.ili>
+Info: ilifile <?/.ilicache/geo.so.ch/models/AGI/SO_FunctionsExt.ili>
+Info: ilifile <?/.ilicache/models.interlis.ch/refhb23/CoordSys-20151124.ili>
+Info: ilifile <?/.ilicache/models.geo.admin.ch/CH/CHBase_Part2_LOCALISATION_V1.ili>
+Info: ilifile <?/.ilicache/models.geo.admin.ch/CH/CHBase_Part1_GEOMETRY_V1.ili>
+Info: ilifile <?/.ilicache/models.geo.admin.ch/CH/CHBase_Part4_ADMINISTRATIVEUNITS_V1.ili>
+Info: ilifile </tmp/ilivalidator_7219220222154217022/SO_Nutzungsplanung_20171118.ili>
+Info: ilifile <?/.ilicache/geo.so.ch/models/ARP/SO_Nutzungsplanung_20171118_Validierung_20190129.ili>
+Info: validate data...
+Info: first validation pass...
+Warning: line 2010: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 9c2b0c7b-3478-44cb-a63f-b39cc0122f41: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-185_186-E.pdf> in attribute TextImWeb
+Warning: line 2011: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 6d772ccc-86e2-41f1-aabb-0b2c6bfff32f: invalid format of INTERLIS.URI value <80-Oensingen/Sonderbauvorschriften/80-150_151-S.pdf> in attribute TextImWeb
+Warning: line 2012: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid e4fedf2b-ed01-4ee1-b7a9-e0e2aa316bd4: invalid format of INTERLIS.URI value <80-Oensingen/Entscheide/80-150_151-E.pdf> in attribute TextImWeb
+Warning: line 2013: SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument: tid 6b416e90-aa57-4a7d-952a-7860cbbbe9b1: invalid format of INTERLIS.URI value <80-Oensingen/Plaene/80-151-P.pdf> in attribute TextImWeb
+Info: additional model SO_Nutzungsplanung_20171118_Validierung_20190129
+Info: additional model SO_FunctionsExt
+Info: second validation pass...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Flaeche.Typ_Erschliessung_Flaechenobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Flaechenobjekt_Flaeche_Pos.Erschliessung_Flaechenobjekt_Pos...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Flaeche.Typ_Erschliessung_Flaechenobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Linie.Typ_Erschliessung_Linienobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Linie.Typ_Erschliessung_Linienobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Linienobjekt_Linie_Pos.Erschliessung_Linienobjekt_Pos...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Punkt.Typ_Erschliessung_Punktobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Punkt.Typ_Erschliessung_Punktobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Punktobjekt_Punkt_Pos.Erschliessung_Punktobjekt_Pos...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Erschliessungsplanung_Validierung.v_Typ_Erschliessung_Flaechenobjekt.Constraint2...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Erschliessungsplanung_Validierung.v_Typ_Erschliessung_Flaechenobjekt.Constraint1...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Erschliessungsplanung_Validierung.v_Typ_Erschliessung_Flaechenobjekt.Constraint3...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Flaeche.Erschliessung_Flaechenobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument.Dokument...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Erschliessungsplanung_Validierung.v_Typ_Erschliessung_Linienobjekt.Constraint1...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Erschliessungsplanung_Validierung.v_Typ_Erschliessung_Linienobjekt.Constraint2...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Erschliessungsplanung_Validierung.v_Typ_Erschliessung_Linienobjekt.Constraint3...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt.Constraint1...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Linie.Erschliessung_Linienobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument.Dokument...
+Error: line 201: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt: tid 23455c47-6421-4920-80b8-ad3a86fde9f3: Typ 'E721_Vorbaulinie' (Typ_Erschliessung_Linienobjekt) ist mit keinem Dokument verkn�pft.
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Erschliessungsplanung_Validierung.v_Typ_Erschliessung_Punktobjekt.Constraint2...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Erschliessungsplanung_Validierung.v_Typ_Erschliessung_Punktobjekt.Constraint1...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument.Dokument...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Punkt.Erschliessung_Punktobjekt...
+Error: line 200: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt: tid 8fe93bd0-41f1-404d-9e37-ff2c4e8a3382: Typ 'E726_Baulinie_Hecke' (Typ_Erschliessung_Linienobjekt) ist mit keinem Dokument verkn�pft.
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument.Typ_Erschliessung_Flaechenobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument.Dokument...
+Error: line 571: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 576: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 570: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 573: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 572: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 575: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 574: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument.Typ_Erschliessung_Linienobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument.Dokument...
+Error: line 580: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 578: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument: No object found with OID 94339341-7490-42bc-b6e8-2c8f8d41b90d.
+Error: line 577: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument: No object found with OID 94339341-7490-42bc-b6e8-2c8f8d41b90d.
+Error: line 579: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 582: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 581: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument.Typ_Erschliessung_Punktobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument.Dokument...
+Error: line 584: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 586: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 585: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 587: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 583: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 588: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 203: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt: tid a9acfeff-7940-4fe6-97fe-9095c6d466fb: Typ 'E725_Waldabstandslinie' (Typ_Erschliessung_Linienobjekt) ist mit keinem Dokument verkn�pft.
+Error: line 205: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt: tid e615d960-5ad5-4d21-ad08-16de2085a1b8: Typ 'E727_Baulinie_Gewaesser' (Typ_Erschliessung_Linienobjekt) ist mit keinem Dokument verkn�pft.
+Error: line 204: SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt: tid ea51c80b-b180-4115-8b4d-2023148bbd02: Typ 'E720_Baulinie_Strasse' (Typ_Erschliessung_Linienobjekt) ist mit keinem Dokument verkn�pft.
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Rechtsvorschriften_Validierung.v_Dokument.Constraint4...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Rechtsvorschriften_Validierung.v_Dokument.Constraint1...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Rechtsvorschriften_Validierung.v_Dokument.checkDocumentURL...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Rechtsvorschriften_Validierung.v_Dokument.Constraint2...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Rechtsvorschriften_Validierung.v_Dokument.Constraint3...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Rechtsvorschriften.HinweisWeitereDokumente.Hinweis...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Rechtsvorschriften.HinweisWeitereDokumente.Ursprung...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Linie_Dokument.Typ_Ueberlagernd_Linie...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument.Typ_Ueberlagernd_Flaeche...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument.Typ_Ueberlagernd_Punkt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument.Typ_Grundnutzung...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument.Typ_Erschliessung_Flaechenobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument.Typ_Erschliessung_Punktobjekt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument.Typ_Erschliessung_Linienobjekt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Grundnutzung.Typ_Grundnutzung...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Grundnutzung.Typ_Grundnutzung...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Grundnutzung_Grundnutzung_Pos.Grundnutzung_Pos...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Grundnutzung.Constraint2...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Grundnutzung.Constraint4...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Grundnutzung.Constraint3...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Grundnutzung.Constraint1...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Grundnutzung.Constraint5...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung.Constraint1...
+Error: line 604: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 00ba242d-869f-4f93-804a-1ca8735edf2d: Typ 'N150_Zone_fuer_oeffentliche_Bauten' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument.Dokument...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Grundnutzung.Grundnutzung...
+Error: line 607: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 010dafe5-68f1-4678-a54e-8a4e76e4904b: Typ 'N140_Kernzone' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Flaeche.Typ_Ueberlagernd_Flaeche...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Flaeche_Flaeche_Pos.Ueberlagernd_Flaeche_Pos...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Flaeche.Typ_Ueberlagernd_Flaeche...
+Error: line 608: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 02bcda0d-c1ef-4dcb-b819-78fbdc9ad8a8: Typ 'N133_Gewerbezone_mit_Wohnen_Mischzone_4_G_und_groesser' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Punkt.Typ_Ueberlagernd_Punkt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Punkt.Typ_Ueberlagernd_Punkt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Punkt_Punkt_Pos.Ueberlagernd_Punkt_Pos...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Ueberlagernd_Flaeche.Constraint1...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Ueberlagernd_Flaeche.Constraint3...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Ueberlagernd_Flaeche.Constraint2...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche.Constraint1...
+Error: line 635: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 06f37bd9-d786-4de7-a108-f8d72955f849: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument.Dokument...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Flaeche.Ueberlagernd_Flaeche...
+Error: line 620: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 07b304a0-e698-4b5d-80ab-ba5bd1545ae1: Typ 'N111_Wohnzone_2_G' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 616: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 087d4d0a-475c-44b8-8d23-ec95f305ed87: Typ 'N117_Zone_fuer_Terrassenhaeuser_Terrassensiedlung' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 609: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 09676c78-9773-4700-8da5-a1db8bc27e97: Typ 'N133_Gewerbezone_mit_Wohnen_Mischzone_4_G_und_groesser' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 650: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 10d51005-9325-4d26-bbef-04a959b1b7af: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 640: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 1494faf7-49d8-4285-baed-f9fb93213af0: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 599: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 21460a98-9afa-459b-b83c-3babf2cf01c7: Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: 'Nutzungsplanfestlegung' - '1810'
+Error: line 600: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 23186708-3fdd-460f-93dd-bbb70e446706: Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: 'Nutzungsplanfestlegung' - '1800'
+Error: line 637: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 23c022d3-66d6-48a5-809b-9c04f56d66c1: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 649: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 24aa7278-12f9-487e-8d39-1a3561c28835: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Ueberlagernd_Punkt.Constraint1...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Ueberlagernd_Punkt.Constraint3...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118_Validierung_20190129.Nutzungsplanung_Validierung.v_Typ_Ueberlagernd_Punkt.Constraint2...
+Info: validate mandatory constraint SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt.Constraint1...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Punkt.Ueberlagernd_Punkt...
+Info: validate multiplicity of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument.Dokument...
+Error: line 595: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 296d8bfe-d53e-4cb9-ab9c-c15d2460d246: Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: 'Nutzungsplanfestlegung' - '4200'
+Error: line 651: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 2c52abb8-45ec-44d1-a3f1-3f4db531e651: Typ 'N823_erhaltenswertes_Kulturobjekt' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 594: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 31a0a4d1-3fa6-42ab-b91b-c1f92efa904a: Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: 'Nutzungsplanfestlegung' - '4210'
+Error: line 614: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 3dd68258-6b5b-4e2f-adf1-e74bd3416313: Typ 'N120_Gewerbezone_ohne_Wohnen' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 631: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 3e266c69-d741-49f8-b956-ef0e1b40865f: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 648: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 3f79954e-fbe3-45d6-a3a1-b39fe9fe37fc: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 592: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 3f912617-6053-4ddc-9a0d-6aa8e1dd9f09: Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: 'Nutzungsplanfestlegung' - '4400'
+Error: line 632: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 406f52fe-d9fa-45e4-b260-5959f2746579: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 647: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 4c50a8f0-70ed-4f70-be04-92ebdf60a666: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 628: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 53674ad5-e404-40a2-aebc-bf840c9d481f: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 641: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 5560170a-a502-43a2-b267-11409ed9143b: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 645: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 5bf3f606-a857-48d5-b332-8481804e832f: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 591: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 60e157d6-dc40-4243-9248-87c3e9c768a4: Typ 'N499_weitere_Bauzonen_nach_Art18_RPG_ausserhalb_Bauzonen' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 605: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 6853b951-bcf3-4dda-8953-988f790304a5: Typ 'N140_Kernzone' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 615: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 6ff1a7b2-a422-41c7-904a-35cdbe26c8e6: Typ 'N120_Gewerbezone_ohne_Wohnen' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 622: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 70594dac-2718-4888-b078-9bcc88be8c8f: Typ 'N686_keine_Empfindlichkeitsstufe' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 638: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 794b81bd-81ce-4d47-b011-8ac04a19f864: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 644: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 7a287ae1-074f-4da2-8e9b-77a93c36a392: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 621: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 7b255d6c-d04a-4a98-baf2-846021b14831: Typ 'N111_Wohnzone_2_G' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 646: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 7e78bc74-c76e-4a8d-975e-2ac61de67bba: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 611: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 87f7282a-6c9a-4317-9a3c-f474ad5452f5: Typ 'N131_Gewerbezone_mit_Wohnen_Mischzone_2_G' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 610: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 892b802c-2b11-4cd5-96ad-0e0aabeb2180: Typ 'N132_Gewerbezone_mit_Wohnen_Mischzone_3_G' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 642: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 8931f1b0-ddcf-459f-978b-c215a98b7f1a: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 629: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 8c9e93c1-93a1-4fa3-97c0-11d6dc6b54b0: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 639: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 8cbfeac6-56c5-4719-b72b-996d8fd7d3be: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 618: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid 909a73b4-d0e3-426c-91dc-f9ed69ed326f: Typ 'N113_Wohnzone_4_G' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 656: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 93560819-820a-46e3-b54b-98eeaf38198c: Typ 'N528_kommunale_Uferschutzzone_ausserhalb_Bauzonen' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 627: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid 9c3cd7a0-3162-443e-8bca-caeb7dcd2f33: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument.Typ_Grundnutzung...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument.Dokument...
+Error: line 1897: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 692: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 691: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1864: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1896: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 690: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 689: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1867: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1889: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 676: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 675: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1868: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1911: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 718: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 717: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1880: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1907: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 710: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 709: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1876: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1895: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 688: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 687: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1869: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1892: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 682: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 681: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1859: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1882: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 663: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 662: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1860: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1888: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 674: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 673: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1855: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1885: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 668: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 667: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1854: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1905: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 706: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 705: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1874: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1884: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 661: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 666: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1852: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1883: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 665: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 664: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1851: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1899: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 695: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 696: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1858: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1886: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 670: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 669: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1865: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1906: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 708: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 707: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1875: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1898: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 694: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 693: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1853: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1912: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 720: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 719: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1881: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1902: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 700: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 699: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1871: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1891: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 680: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 679: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1870: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1909: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 714: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 713: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1878: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1901: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 660: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 698: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1861: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1903: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 702: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 701: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1872: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1890: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 678: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 677: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1866: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1908: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 712: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 711: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1877: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1910: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 716: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 715: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1879: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1893: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 684: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 683: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1856: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1894: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 686: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 685: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1862: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1904: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 704: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 703: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1873: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1900: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 659: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 697: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1863: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1887: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 672: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 671: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1857: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument.Typ_Ueberlagernd_Flaeche...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument.Dokument...
+Error: line 1958: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 0400404a-47be-49d4-a311-4e515142a0b3.
+Error: line 1959: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1685168e-452d-42d3-b855-acb2c315ad53.
+Error: line 1960: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID bdcf4ac2-938e-4a7e-8a38-d6f87efb37a2.
+Error: line 1998: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 0413d71b-cd51-4a02-8b82-df9d6c4a2ee7.
+Error: line 1997: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 6f1c9de8-d309-462d-98ef-e23ac954707f.
+Error: line 1999: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 75eb4d1a-b458-4b2a-97ff-f7b576ee3d8a.
+Error: line 2001: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 732: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 731: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1927: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1973: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 2319ace1-0cd8-43ac-8909-aa6b762bd2cc.
+Error: line 1975: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 56dd60cd-d35e-440d-b5fa-15cc106cb846.
+Error: line 1974: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID b2bfce73-ed8a-444e-b707-95ff31e245b6.
+Error: line 1965: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 015f0ed2-0ee8-4b4f-916c-ff0c84f71ab8.
+Error: line 1964: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 51df20ae-e786-4ee4-abb8-06861cc13f78.
+Error: line 1966: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 98000fa8-200a-4616-a261-f0b15df0858d.
+Error: line 1996: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 0ac90654-a6ce-4fd7-b1ae-a388ddb648e2.
+Error: line 1995: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 0d17b553-c5e7-4bf5-a16b-4c8c4ee3c6c1.
+Error: line 2002: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 734: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 733: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1924: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1943: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 27c4c012-f93e-4e5e-8dbc-233182f75ba1.
+Error: line 1944: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 648bbefb-6db4-44ef-9a7a-da48b916a2be.
+Error: line 1945: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 723f5ba2-aca8-4c04-9a63-53a75f438345.
+Error: line 1993: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 54b58fd1-6af9-4e22-ab54-72a3297dcbd8.
+Error: line 1992: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID ac8432ad-0d9d-413c-b9c1-61876a6dec1d.
+Error: line 1994: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID c272ea15-bf1a-4ec4-8271-6f10eb833794.
+Error: line 1948: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 443eb6bb-9544-4476-8191-ae6ac1b6509f.
+Error: line 1947: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 62a084c3-cedb-4616-aae7-1c6f73bf3e92.
+Error: line 1946: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 742f423f-64a7-433a-911c-ff2ff1a2a5ad.
+Error: line 1954: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 2d86f892-a35c-4eb8-97be-57ec985481f1.
+Error: line 1953: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 88b6c66f-98eb-4caa-aa9d-c6d39ac2ef3e.
+Error: line 1952: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 911a4c59-df17-43b1-a93a-ed174083c365.
+Error: line 1934: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 77daefc0-3aa4-4b41-846f-1b4b8f1eb69d.
+Error: line 1936: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 88ee90c3-4014-4e98-a0bd-439d9cd79d2a.
+Error: line 1935: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID d9d91d68-e52d-46ef-81a1-74fba87c703c.
+Error: line 1976: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 2208cfe5-e58b-45e7-a73d-efe5e806ff2c.
+Error: line 1977: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7d6fc3fa-f938-42d5-b285-d8b26e7e48c5.
+Error: line 1988: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID a9c8fd11-e871-4b2e-a5dc-2d80338b6157.
+Error: line 1987: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID e7ad7101-27cc-42ee-b8fb-16eefc26b9d9.
+Error: line 1917: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 724: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 722: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1913: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1967: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 01927d36-adcf-4864-a235-421dc5a255c8.
+Error: line 1969: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 11174ba1-52b1-4f4f-a6bb-b0e578d2152a.
+Error: line 1968: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 2bd918c2-b7db-4af1-bd31-99b3ebd97142.
+Error: line 1986: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 05d96986-5fa6-4729-8d4f-02ebf8a92b2c.
+Error: line 1984: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 23a50223-c933-4dbb-a8f0-a4a627a8d5d2.
+Error: line 1985: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID d92fe69e-f19f-43a4-89e7-0dac5bc39de6.
+Error: line 1989: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 0211dde3-032d-4be8-a1fb-07e9e2334102.
+Error: line 1991: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 076b6521-8797-4d78-b187-dfc3bcfc91b3.
+Error: line 1990: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 9cd3c2ce-28c8-4fdc-8399-12d3b614038c.
+Error: line 1978: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 625a7359-2f68-4434-b34f-f78f8bceba07.
+Error: line 1980: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 6e3ee730-fff0-4f4d-a176-8391de104e73.
+Error: line 1979: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID b07a249e-63f4-4d2e-9b3d-b60b7f6ba163.
+Error: line 1938: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7e0e2535-7559-45e2-b0e7-b9f33e528130.
+Error: line 1937: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID d4b4dcbe-7868-4e89-8427-c1b517976fc0.
+Error: line 1939: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID daedc5a9-5f38-4d40-a901-b791a58090b6.
+Error: line 1971: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 016fe851-0670-447a-a5b0-aeeba935260b.
+Error: line 1970: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID b0ca0496-0b00-4b2b-9c24-023f9cfad607.
+Error: line 1972: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID d84c9c01-8c6a-449c-9260-9f93dba8b54e.
+Error: line 2006: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 742: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 741: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1929: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1933: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 3eec746c-fa74-4e2b-ab59-eb82baa7b8f7.
+Error: line 1931: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 9f92cc5a-f2b5-41d9-a801-b60221c1d2a0.
+Error: line 1932: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID f93af5ed-77b8-44a4-af71-3e108fa367ee.
+Error: line 1920: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 728: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 727: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1916: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1942: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID c37c3e1d-5085-4f55-bac9-7d39aaddd98c.
+Error: line 1940: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID d47ecb79-c01f-46b6-b126-e0880ddaa766.
+Error: line 1941: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID d9f5e1c5-0864-479c-94c0-3bc2a4fe7d97.
+Error: line 1922: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 0a8e4120-b83d-445e-a337-98c46587d710.
+Error: line 1923: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 514f3d0c-db4e-46a9-80bc-9ba0e5b6b870.
+Error: line 1921: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID b501570c-160b-4393-8648-a3c3349fa2e5.
+Error: line 2004: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 738: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 737: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1930: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 2000: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 730: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 729: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1926: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1981: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 4358f22a-32e7-4b43-bb74-8e0995ab8387.
+Error: line 1983: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID cdb5df62-9a98-4ff1-b852-1b3ecdda2348.
+Error: line 1982: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID ea53bddc-0b06-47f5-989f-23b43fa6d3f4.
+Error: line 1918: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 725: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 721: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1914: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 2005: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 740: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 739: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1928: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 2003: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 736: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 735: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1925: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1951: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 34aa27c5-2608-47c8-8ae9-cfdcde155409.
+Error: line 1950: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 8620e45c-819e-4af3-a50b-585aa4c5d39a.
+Error: line 1949: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID f5f73a69-dac0-4ea2-bdee-2a5aed99ba15.
+Error: line 1963: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID ca11419d-c78a-4da1-ae06-e2610513fdf4.
+Error: line 1962: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID cadd258d-54fa-4839-8005-cc6b28d31784.
+Error: line 1961: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID d383f674-c721-4a17-be91-e8710b148a71.
+Error: line 1919: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 726: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 723: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 1915: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 992bc619-4cec-4d5a-b84b-23dddf969bba.
+Error: line 1957: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID 5eb7e34a-efd9-468b-95f5-71948a8fd1d0.
+Error: line 1955: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID bd0810cf-3e66-4d8e-9627-bb2c9a3d0eab.
+Error: line 1956: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument: No object found with OID d498b17c-c2ae-4222-93d3-b9cfb25658b6.
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument.Typ_Ueberlagernd_Punkt...
+Info: validate target of role SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument.Dokument...
+Error: line 2007: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument: No object found with OID 1a6092ad-a523-4317-b19b-6cf50667b431.
+Error: line 744: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument: No object found with OID 7bc909d2-022e-4ea9-948e-7bc4cfc8c215.
+Error: line 743: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument: No object found with OID 89ebb247-0676-4051-bf05-09957856b0ec.
+Error: line 625: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid aa486873-7913-4550-b0b7-488b0255a3f2: Typ 'N683_Empfindlichkeitsstufe_III' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 630: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid aaeeeb01-f488-45a5-9833-6202826570ff: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 626: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid ab64199f-cfa2-4689-9420-59c6ac04eaea: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 601: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid aeb8e4db-c3b3-4596-a60f-32604b22abb9: Typ 'N169_weitere_eingeschraenkte_Bauzonen' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 612: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid b026ebb1-aaef-467e-9a2c-c618304be116: Typ 'N121_Industriezone' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 657: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid b4d7daab-e4ab-44ee-bb81-e53ff87be20b: Typ 'N523_Landschaftsschutzzone' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 606: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid b5b831b5-9869-4eaf-8049-7c09972378ce: Typ 'N140_Kernzone' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 653: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid ba6365a9-f9f7-4084-a92b-cdabae60014f: Typ 'N620_Perimeter_Gestaltungsplanpflicht' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 643: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid bfed07ec-37aa-4615-91d4-99d9128ae7e1: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 623: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid c3acf223-f61d-4753-a6c1-554e273deb53: Typ 'N685_Empfindlichkeitsstufe_IV' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 655: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid c4eb7e81-b67f-41f6-9919-cd1fa9e04537: Typ 'N528_kommunale_Uferschutzzone_ausserhalb_Bauzonen' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 617: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid c83bbb38-5120-4a29-86c6-f3e67ef55728: Typ 'N113_Wohnzone_4_G' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 619: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid caaf3274-bd96-483e-b940-3fdd83abd3c9: Typ 'N112_Wohnzone_3_G' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 596: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid cd3ee859-2470-4e23-8b4c-dcdea594e833: Attributwert Verbindlichkeit ist nicht identisch zum Objektkatalog: 'Nutzungsplanfestlegung' - '3200'
+Error: line 602: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid cdf2f506-e2da-4e10-ba07-8a3cc6191a0e: Typ 'N161_kommunale_Uferschutzzone_innerhalb_Bauzone' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 652: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid d04af4e0-a868-4e50-9b01-fee1cceadcd1: Typ 'N822_schuetzenswertes_Kulturobjekt' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 633: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid e0219e51-8d68-49c9-bf90-0941c00c7afb: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 613: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid e54e41a3-a7c7-4868-880a-b7d44431ab43: Typ 'N120_Gewerbezone_ohne_Wohnen' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 636: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid e86d81e1-0cc8-478f-87ab-a4a9850212e3: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 624: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid e9953b6f-0725-4b61-a8b3-f23f87c16ab5: Typ 'N681_Empfindlichkeitsstufe_II' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Error: line 603: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid eb1e7f31-db5b-4e1e-8ff7-55e4de98cff2: Typ 'N160_Gruen_und_Freihaltezone_innerhalb_Bauzone' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 597: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung: tid f69c7f1a-b667-48f3-92f2-eae3671d2297: Typ 'N310_kommunale_Naturschutzzone' (Typ_Grundnutzung) ist mit keinem Dokument verkn�pft.
+Error: line 634: SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche: tid ff4c2296-ba52-42b0-bd6d-48f7b99637dc: Typ 'N611_Perimeter_kommunaler_Gestaltungsplan' (Typ_Ueberlagernd_Flaeche) ist mit keinem Dokument verkn�pft.
+Info: validate set constraint SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Flaeche.laermempfindlichkeitsAreaCheck...
+Info: validate AREA SO_Nutzungsplanung_20171118.Nutzungsplanung.Grundnutzung.Geometrie...
+Error: polygons overlay tid1 e91c316a-2f0c-4c89-8112-14f116877217, tid2 af8d1472-627b-44b2-9ca9-a2ecb865c17b
+Error: failed to validate AREA SO_Nutzungsplanung_20171118.Nutzungsplanung.Grundnutzung.Geometrie
+Info: /tmp/ilivalidator_7219220222154217022/2407_v2.xtf: SO_Nutzungsplanung_20171118.Erschliessungsplanung BID=1818
+Info:     188 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Flaechenobjekt
+Info:     341 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Linienobjekt
+Info:      19 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Erschliessung_Punktobjekt
+Info:       7 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt
+Info:       7 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Flaechenobjekt_Dokument
+Info:       6 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt
+Info:       6 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Linienobjekt_Dokument
+Info:       4 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt
+Info:       6 objects in CLASS SO_Nutzungsplanung_20171118.Erschliessungsplanung.Typ_Erschliessung_Punktobjekt_Dokument
+Info: /tmp/ilivalidator_7219220222154217022/2407_v2.xtf: SO_Nutzungsplanung_20171118.Nutzungsplanung BID=90
+Info:     565 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Grundnutzung
+Info:      31 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung
+Info:     124 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Grundnutzung_Dokument
+Info:      36 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche
+Info:     116 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Flaeche_Dokument
+Info:       1 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt
+Info:       3 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Typ_Ueberlagernd_Punkt_Dokument
+Info:     312 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Flaeche
+Info:     229 objects in CLASS SO_Nutzungsplanung_20171118.Nutzungsplanung.Ueberlagernd_Punkt
+Info: /tmp/ilivalidator_7219220222154217022/2407_v2.xtf: SO_Nutzungsplanung_20171118.Rechtsvorschriften BID=2
+Info:       4 objects in CLASS SO_Nutzungsplanung_20171118.Rechtsvorschriften.Dokument
+Info: ...validation failed
